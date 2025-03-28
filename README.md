@@ -27,6 +27,6 @@ A collection of 'beginner-friendly' **C programming projects** covering **algori
 
 ### **1️⃣ Clone this repository**  
 ```sh
-git clone https://github.com/yourusername/C-Simple-Projects.git
+https://github.com/JakubStachh/C-Simple-Projects
 cd C-Simple-Projects
 
