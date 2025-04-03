@@ -13,7 +13,7 @@ A collection of 'beginner-friendly' **C programming projects** covering **algori
 
 | #  | Project Name               | Description |
 |----|----------------------------|-------------|
-| 1️⃣ | **Anagram Checker**        | Checks if two words are anagrams |
+| 1️⃣ | [**Anagram Checker**](https://github.com/JakubStachh/Kotlin-Projects/tree/main/Kotlin%20Programs/Reverse%20a%20String)        | Checks if two words are anagrams |
 | 2️⃣ | **Prime Number Checker**   | Determines if a number is prime |
 | 3️⃣ | **Fibonacci Generator**    | Generates Fibonacci series up to `n` |
 | 4️⃣ | **Palindrome Checker**     | Verifies if a string is a palindrome |
