@@ -1,32 +1,60 @@
-# C - Simple Projects 🚀  
+# 📊 Find Minimum and Maximum in an Array (C Program)
 
-A collection of 'beginner-friendly' **C programming projects** covering **algorithms, problem-solving, and small applications**. Each project is self-contained and organized into folders for easy access.  
-
-📌 **Perfect for:**  
-✔️ Beginners learning C  
-✔️ Interview preparation  
-✔️ Small coding exercises  
+This simple C program finds the **minimum** and **maximum** values in an array using a single traversal with the help of pointers.
 
 ---
 
-## 📂 Project List  
+## 🔍 What the Program Does
 
-| #  | Project Name               | Description |
-|----|----------------------------|-------------|
-| 1️⃣ | **Anagram Checker**        | Checks if two words are anagrams |
-| 2️⃣ | **Prime Number Checker**   | Determines if a number is prime |
-| 3️⃣ | **Fibonacci Generator**    | Generates Fibonacci series up to `n` |
-| 4️⃣ | **Palindrome Checker**     | Verifies if a string is a palindrome |
-| 5️⃣ | **Tic-Tac-Toe**            | A simple CLI Tic-Tac-Toe game |
-| 6️⃣ | **Temperature Converter**  | Converts Celsius to Fahrenheit and vice versa |
-| ... | *More projects coming soon!* 🚀 |
+- Takes a predefined array of integers.
+- Traverses the array once to:
+  - 🟢 Identify the **smallest element**.
+  - 🔴 Identify the **largest element**.
+- Prints both the values.
 
 ---
 
-## 🔧 Installation & Usage  
+## 🧠 How It Works
 
-### **1️⃣ Clone this repository**  
-```sh
-git clone https://github.com/yourusername/C-Simple-Projects.git
-cd C-Simple-Projects
+### 🔧 `findMinMax()` Function:
+- **Parameters**:
+  - `arr[]` – input array
+  - `size` – number of elements
+  - `*min`, `*max` – pointers to store results
+- **Logic**:
+  1. Initialize both `*min` and `*max` to the first element.
+  2. Loop through the array:
+     - If current element > `*max`, update `*max`.
+     - If current element < `*min`, update `*min`.
 
+---
+
+## 💻 Code:
+
+```c
+#include <stdio.h>
+
+void findMinMax(int arr[], int size, int *min, int *max) {
+    *min = *max = arr[0];
+    for (int i = 1; i < size; i++) {
+        if (arr[i] > *max) *max = arr[i];
+        if (arr[i] < *min) *min = arr[i];
+    }
+}
+
+int main() {
+    int arr[] = {10, 2, 5, 8, 1, 3};
+    int size = sizeof(arr) / sizeof(arr[0]);
+    int min, max;
+
+    findMinMax(arr, size, &min, &max);
+    printf("Min: %d, Max: %d\n", min, max);
+    return 0;
+}
+```
+
+---
+## 🧪 Sample Output:
+```
+Min: 1, Max: 10
+```
