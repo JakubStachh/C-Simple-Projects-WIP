@@ -1,32 +1,64 @@
-# C - Simple Projects 🚀  
+# Prime Number Checker in C++
 
-A collection of 'beginner-friendly' **C programming projects** covering **algorithms, problem-solving, and small applications**. Each project is self-contained and organized into folders for easy access.  
+## 📝 **Overview**
 
-📌 **Perfect for:**  
-✔️ Beginners learning C  
-✔️ Interview preparation  
-✔️ Small coding exercises  
+This C++ program determines if a given number is **prime**. A prime number is a number greater than 1 that has no divisors other than 1 and itself. 
 
----
-
-## 📂 Project List  
-
-| #  | Project Name               | Description |
-|----|----------------------------|-------------|
-| 1️⃣ | **Anagram Checker**        | Checks if two words are anagrams |
-| 2️⃣ | **Prime Number Checker**   | Determines if a number is prime |
-| 3️⃣ | **Fibonacci Generator**    | Generates Fibonacci series up to `n` |
-| 4️⃣ | **Palindrome Checker**     | Verifies if a string is a palindrome |
-| 5️⃣ | **Tic-Tac-Toe**            | A simple CLI Tic-Tac-Toe game |
-| 6️⃣ | **Temperature Converter**  | Converts Celsius to Fahrenheit and vice versa |
-| ... | *More projects coming soon!* 🚀 |
+For example:
+- **17** is a prime number because it is only divisible by 1 and 17.
+- **18** is not a prime number because it has divisors other than 1 and 18 (i.e., 2, 3, 6, 9).
 
 ---
 
-## 🔧 Installation & Usage  
+## 💻 **Program Explanation**
 
-### **1️⃣ Clone this repository**  
-```sh
-git clone https://github.com/yourusername/C-Simple-Projects.git
-cd C-Simple-Projects
+### **Steps**:
+1. **Initial Check**: The program first checks if the number is less than or equal to 1. If so, it returns false since numbers less than or equal to 1 are not prime.
+2. **Looping through Potential Divisors**: The program loops through numbers starting from 2 up to the square root of the given number (`sqrt(num)`) to check for any divisors. 
+   - If a divisor is found, the number is not prime.
+   - If no divisors are found, the number is prime.
 
+---
+
+## 🧑‍💻 **Code:**
+
+```cpp
+#include <iostream>
+
+bool isPrime(int num) {
+    if (num <= 1) return false;
+    for (int i = 2; i * i <= num; i++) {
+        if (num % i == 0) return false;
+    }
+    return true;
+}
+
+int main() {
+    int num = 17;
+    std::cout << num << (isPrime(num) ? " is Prime" : " is not Prime") << std::endl;
+    return 0;
+}
+```
+
+---
+## 🚀 How It Works:
+### 1. Initial Check:
+- The program first checks if the number is less than or equal to 1. Prime numbers are defined as integers greater than 1, so if the number is 1 or lower, the program immediately returns `false`.
+
+### 2. Checking for Divisors:
+- The loop iterates through possible divisors from 2 up to the square root of the number. If any number divides the input evenly (i.e., `num % i == 0`), the program returns `false` because the number is not prime.
+
+### 3. Conclusion:
+- If the loop completes without finding any divisors, the number is prime, and the program returns `true`.
+
+---
+## 🖼️ Sample Output:
+### Example 1 - Check for 17:
+```csharp
+17 is Prime
+```
+
+### Example 2 - Check for 18:
+```csharp
+18 is not Prime
+```
