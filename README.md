@@ -89,7 +89,7 @@ A collection of 'beginner-friendly' **C programming projects** covering **algori
 
 --
 
-## 📦 La Installation for C
+## 📦 La Installation for `C`
 
 ### 𓀃 The Actual Installation🤌🤌
 
@@ -115,7 +115,7 @@ A collection of 'beginner-friendly' **C programming projects** covering **algori
 
 ---
 
-## 📦 La Installation for C++
+## 📦 La Installation for `C++`
 
 ### 𓀃 The Actual Installation🤌🤌
 
@@ -141,7 +141,7 @@ A collection of 'beginner-friendly' **C programming projects** covering **algori
 
 ---
 
-## 📦 La Installation for C#
+## 📦 La Installation for `C#`
 
 ### 𓀃 The Actual Installation🤌🤌
 
