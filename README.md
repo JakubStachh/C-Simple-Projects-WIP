@@ -16,19 +16,20 @@ A collection of 'beginner-friendly' **C programming projects** covering **algori
 |‎ ‎ 6️⃣|[Check_if_a_Number_is_Prime](https://github.com/JakubStachh/C-Simple-Projects/tree/main/C%20-%20Projects%20Simple/projects/Check_if_a_Number_is_Prime)|The loop runs from `2` to `√n` (i.e., while `i * i <= n`)|
 |‎‎ ‎ 7️⃣|[Contact_List](https://github.com/JakubStachh/C-Simple-Projects/tree/main/C%20-%20Projects%20Simple/projects/Contact_List)|A simple Contact List Program built in C to add, view, and delete contacts using a structured approach|
 |‎‎ ‎ 8️⃣|[Count_the_Number_of_Vowels_and_Consonants_in_a_String](https://github.com/JakubStachh/C-Simple-Projects/tree/main/C%20-%20Projects%20Simple/projects/Count%20the%20Number_of_Vowels_and_Consonants_in_a_String)|This program takes a string input and counts the number of vowels and consonants present in it|
-|‎‎ ‎ 9️⃣|[]()||
-|1️⃣0️⃣|[]()||
-|1️⃣1️⃣|[]()||
-|1️⃣2️⃣|[]()||
-|1️⃣3️⃣|[]()||
-|1️⃣4️⃣|[]()||
-|1️⃣5️⃣|[]()||
-|1️⃣6️⃣|[]()||
-|1️⃣7️⃣|[]()||
-|1️⃣8️⃣|[]()||
-|1️⃣9️⃣|[]()||
-|2️⃣0️⃣|[]()||
-|2️⃣1️⃣|[]()||
+|‎‎ ‎ 9️⃣|[Find_Duplicates_in_an_Array](https://github.com/JakubStachh/C-Simple-Projects/tree/main/C%20-%20Projects%20Simple/projects/Find_Duplicates_in_an_Array)|This program finds and displays the duplicate elements present in an array of integers|
+|1️⃣0️⃣|[Find_the_Factorial_of_a_Number](https://github.com/JakubStachh/C-Simple-Projects/tree/main/C%20-%20Projects%20Simple/projects/Find_the_Factorial_of_a_Number)|This program calculates the factorial of a number using recursion in C|
+|1️⃣1️⃣|[Find_the_Fibonacci_Number](https://github.com/JakubStachh/C-Simple-Projects/tree/main/C%20-%20Projects%20Simple/projects/Find_the_Fibonacci_Number)|Uses a loop to avoid recursion;
+Updates two previous values to generate the next one|
+|1️⃣2️⃣|[Find_the_Largest_and_Smallest_Elements_in_an_Array](https://github.com/JakubStachh/C-Simple-Projects/tree/main/C%20-%20Projects%20Simple/projects/Find_the_Largest_and_Smallest_Elements_in_an_Array)|This simple C program finds the minimum and maximum values in an array using a single traversal with the help of pointers|
+|1️⃣3️⃣|[Find_the_Missing_Number_in_an_Array](https://github.com/JakubStachh/C-Simple-Projects/tree/main/C%20-%20Projects%20Simple/projects/Find_the_Missing_Number_in_an_Array)|This program finds the one missing number in a sequence of n natural numbers from 1 to n, where one number is missing|
+|1️⃣4️⃣|[Find_the_Second_Largest_Number_in_an_Array](https://github.com/JakubStachh/C-Simple-Projects/tree/main/C%20-%20Projects%20Simple/projects/Find_the_Second_Largest_Number_in_an_Array)|This program finds the second largest number in a given array of integers|
+|1️⃣5️⃣|[Guess_the_Number](https://github.com/JakubStachh/C-Simple-Projects/tree/main/C%20-%20Projects%20Simple/projects/Guess_the_Number)|This program implements a simple Guess the Number game|
+|1️⃣6️⃣|[Multiplication_Table](https://github.com/JakubStachh/C-Simple-Projects/tree/main/C%20-%20Projects%20Simple/projects/Multiplication_Table)|This C program prints a **multiplication table** from `1 x 1` to `10 x 10`|
+|1️⃣7️⃣|[Reverse_a _String](https://github.com/JakubStachh/C-Simple-Projects/tree/main/C%20-%20Projects%20Simple/projects/Reverse_a%20_String)|This C program takes a string and reverses it in-place using the two-pointer approach|
+|1️⃣8️⃣|[Reverse_an_Integer](https://github.com/JakubStachh/C-Simple-Projects/tree/main/C%20-%20Projects%20Simple/projects/Reverse_an_Integer)|This C program takes an integer input from the user and reverses the digits of the number|
+|1️⃣9️⃣|[Simple_Notepad](https://github.com/JakubStachh/C-Simple-Projects/tree/main/C%20-%20Projects%20Simple/projects/Simple_Notepad)|This C program implements a simple notepad that allows users to write text to a file and read text from a file|
+|2️⃣0️⃣|[Temperature_Converter](https://github.com/JakubStachh/C-Simple-Projects/tree/main/C%20-%20Projects%20Simple/projects/Temperature_Converter)|This program allows users to convert temperatures between Celsius and Fahrenheit|
+|2️⃣1️⃣|[Tic-Tac-Toe_Game](https://github.com/JakubStachh/C-Simple-Projects/tree/main/C%20-%20Projects%20Simple/projects/Tic-Tac-Toe_Game)|This is a console-based Tic-Tac-Toe game for two players|
 
 
 ---
