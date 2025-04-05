@@ -7,13 +7,13 @@ An **Armstrong number** (also known as a narcissistic number or pluperfect numbe
   $$ 
   \large 1^3 + 5^3 + 3^3 = 153 
   $$
-  
+  ##
 - 370 is an Armstrong number because:
 
   $$ 
   \large 3^3 + 7^3 + 0^3 = 370 
   $$
-
+  ##
 ## 📚 **Program Explanation**
 
 1. **`isArmstrong()` Function:**
