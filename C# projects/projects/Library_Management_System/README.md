@@ -111,7 +111,7 @@ namespace LibrarySystem
 ---
 ## 🚀 Example Run:
 ### Input/Output Example:
-```
+```yaml
 Welcome to the Library Management System
 Commands: add, remove, view, exit
 
