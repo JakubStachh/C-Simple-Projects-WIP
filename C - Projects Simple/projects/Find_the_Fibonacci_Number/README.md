@@ -71,10 +71,12 @@ int main() {
 
     return 0;
 }
-🧪 Sample Output
-mathematica
-Copy
-Edit
+```
+
+---
+## 🧪 Sample Output
+```
 Enter position: 7
 Fibonacci (Recursive): 13
 Fibonacci (Iterative): 13
+```
