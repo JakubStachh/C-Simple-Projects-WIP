@@ -71,17 +71,31 @@ $$
 
 
 ​where i represents the row index of matrix A, j represents the column index of matrix B, and k is the index for the sum over the product.
+##
+### 3. Displaying the Result:
+- The result of the matrix multiplication is displayed row by row using nested loops.
 
-3. Displaying the Result:
-The result of the matrix multiplication is displayed row by row using nested loops.
-
-🖼️ Sample Output:
-rust
-Copy
-Edit
+---
+## 🖼️ Sample Output:
+```rust
 Result of matrix multiplication: 
 19 22 
 43 50
+```
 In the output:
 
 The result matrix is calculated as:
+
+\[
+\text{result}[0][0] = (1 \times 5) + (2 \times 7) = 19
+\]
+\[
+\text{result}[0][1] = (1 \times 6) + (2 \times 8) = 22
+\]
+\[
+\text{result}[1][0] = (3 \times 5) + (4 \times 7) = 43
+\]
+\[
+\text{result}[1][1] = (3 \times 6) + (4 \times 8) = 50
+\]
+
