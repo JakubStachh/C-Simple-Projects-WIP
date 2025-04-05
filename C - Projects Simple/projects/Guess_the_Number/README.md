@@ -51,7 +51,7 @@ int main() {
     return 0;
 }
 ```
-🧪 Sample Output
+## 🧪 Sample Output
 **Input:**
 
 ```
