@@ -1,32 +1,74 @@
-# C - Simple Projects 🚀  
+# 🔄 Reverse Number in C
 
-A collection of 'beginner-friendly' **C programming projects** covering **algorithms, problem-solving, and small applications**. Each project is self-contained and organized into folders for easy access.  
-
-📌 **Perfect for:**  
-✔️ Beginners learning C  
-✔️ Interview preparation  
-✔️ Small coding exercises  
+This C program takes an integer input from the user and reverses the digits of the number.
 
 ---
 
-## 📂 Project List  
+## ⚙️ Logic & Approach
 
-| #  | Project Name               | Description |
-|----|----------------------------|-------------|
-| 1️⃣ | **Anagram Checker**        | Checks if two words are anagrams |
-| 2️⃣ | **Prime Number Checker**   | Determines if a number is prime |
-| 3️⃣ | **Fibonacci Generator**    | Generates Fibonacci series up to `n` |
-| 4️⃣ | **Palindrome Checker**     | Verifies if a string is a palindrome |
-| 5️⃣ | **Tic-Tac-Toe**            | A simple CLI Tic-Tac-Toe game |
-| 6️⃣ | **Temperature Converter**  | Converts Celsius to Fahrenheit and vice versa |
-| ... | *More projects coming soon!* 🚀 |
+1. The function **`reverseNumber()`** reverses the digits of the input number using a **while loop**:
+   - The remainder when the number is divided by 10 (`num % 10`) gives the last digit.
+   - The last digit is then added to the reversed number (which is initially 0).
+   - The number is divided by 10 to remove the last digit.
+2. This process continues until the number becomes 0.
+3. The reversed number is then returned.
 
 ---
 
-## 🔧 Installation & Usage  
+## 💻 Code
 
-### **1️⃣ Clone this repository**  
-```sh
-git clone https://github.com/yourusername/C-Simple-Projects.git
-cd C-Simple-Projects
+```c
+#include <stdio.h>
 
+// Function to reverse a number
+int reverseNumber(int num) {
+    int reversed = 0;
+    
+    // Repeatedly extract last digit and build reversed number
+    while (num != 0) {
+        int digit = num % 10;
+        reversed = reversed * 10 + digit;
+        num /= 10;  // Remove the last digit
+    }
+    
+    return reversed;  // Return the reversed number
+}
+
+int main() {
+    int num;
+
+    // Ask the user for input
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    // Output the reversed number
+    printf("Reversed number: %d\n", reverseNumber(num));
+    return 0;
+}
+```
+
+---
+## 🧪 Sample Output
+- **Example 1:**
+
+   - **Input:**
+
+```
+Enter a number: 12345
+```
+   - **Output:**
+```
+Reversed number: 54321
+```
+
+- **Example 2:**
+
+   - **Input:**
+
+```
+Enter a number: 9876
+```
+   - **Output:**
+```
+Reversed number: 6789
+```
