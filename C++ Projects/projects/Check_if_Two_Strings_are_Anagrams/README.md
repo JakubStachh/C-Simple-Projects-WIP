@@ -53,7 +53,7 @@ int main() {
 ---
 ## 🖼️ Sample Output:
 ### Example 1 - Check for `"listen"` and `"silent"`:
-```ymal
+```yaml
 Anagrams
 ```
 
