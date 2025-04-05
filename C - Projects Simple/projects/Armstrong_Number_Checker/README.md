@@ -103,5 +103,5 @@ Enter a number: 123
  $$ 
 \large 1^3 + 5^3 + 3^3 = 153 \quad \text{so it is an Armstrong number.}
  $$
-
+ ##
  - The function checks if the sum equals the original number and prints the appropriate message.
