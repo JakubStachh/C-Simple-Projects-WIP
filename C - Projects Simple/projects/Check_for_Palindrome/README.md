@@ -72,9 +72,9 @@ Is 121 a palindrome? Yes
 ### 📌 `isPalindromeString()`:
 - Uses two pointers (`left` and `right`) to compare characters from both ends of the string.
 
-Returns `1` if all characters match, `0` otherwise.
+- Returns `1` if all characters match, `0` otherwise.
 
 ### 📌 `isPalindromeNumber()`:
 - Reverses the number using **modulo** (`%`) and **division** (`/`).
 
-Compares the reversed number to the original.
+- Compares the reversed number to the original.
