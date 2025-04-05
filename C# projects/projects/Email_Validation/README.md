@@ -1,32 +1,88 @@
-# C - Simple Projects 🚀  
+# Email Validator in C#
 
-A collection of 'beginner-friendly' **C programming projects** covering **algorithms, problem-solving, and small applications**. Each project is self-contained and organized into folders for easy access.  
+## 📧 **Overview**
 
-📌 **Perfect for:**  
-✔️ Beginners learning C  
-✔️ Interview preparation  
-✔️ Small coding exercises  
+This program validates an email address entered by the user. It checks whether the input follows a valid email format using regular expressions.
 
 ---
 
-## 📂 Project List  
+## 💻 **Program Explanation**
 
-| #  | Project Name               | Description |
-|----|----------------------------|-------------|
-| 1️⃣ | **Anagram Checker**        | Checks if two words are anagrams |
-| 2️⃣ | **Prime Number Checker**   | Determines if a number is prime |
-| 3️⃣ | **Fibonacci Generator**    | Generates Fibonacci series up to `n` |
-| 4️⃣ | **Palindrome Checker**     | Verifies if a string is a palindrome |
-| 5️⃣ | **Tic-Tac-Toe**            | A simple CLI Tic-Tac-Toe game |
-| 6️⃣ | **Temperature Converter**  | Converts Celsius to Fahrenheit and vice versa |
-| ... | *More projects coming soon!* 🚀 |
+1. **`IsValidEmail` Method**:
+   - Takes an email string as input.
+   - Uses a regular expression pattern to check if the email matches the expected format.
+   - The pattern matches most typical email formats such as `example@domain.com`.
+
+2. **`Main` Method**:
+   - Asks the user to enter an email address.
+   - Calls the `IsValidEmail` method to verify the email format.
+   - Displays whether the email is valid or invalid based on the result.
 
 ---
 
-## 🔧 Installation & Usage  
+## 🧑‍💻 **Code:**
 
-### **1️⃣ Clone this repository**  
-```sh
-git clone https://github.com/yourusername/C-Simple-Projects.git
-cd C-Simple-Projects
+```csharp
+using System;
+using System.Text.RegularExpressions;
 
+namespace EmailValidator
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter email address:");
+            string email = Console.ReadLine();
+
+            if (IsValidEmail(email))
+            {
+                Console.WriteLine("Valid email address.");
+            }
+            else
+            {
+                Console.WriteLine("Invalid email address.");
+            }
+        }
+
+        static bool IsValidEmail(string email)
+        {
+            string pattern = @"^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$";
+            Regex regex = new Regex(pattern);
+            return regex.IsMatch(email);
+        }
+    }
+}
+```
+
+---
+## 🚀 Example Run:
+- **Input 1:**
+```
+Enter email address:
+test@example.com
+```
+
+- **Output:**
+```
+Valid email address.
+```
+
+- **Input 2:**
+```
+Enter email address:
+invalid-email
+```
+
+- **Output:**
+```
+Invalid email address.
+```
+
+---
+## ⚡ How It Works:
+- The program prompts the user to enter an email address.
+
+- It uses a regular expression (`Regex`) to check if the email follows a standard format (`e.g., user@domain.com`).
+
+- If the email matches the pattern, it outputs "Valid email address." Otherwise, it returns "Invalid email address."
