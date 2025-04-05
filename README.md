@@ -97,73 +97,30 @@ A collection of 'beginner-friendly' **C programming projects** covering **algori
 
 #### But if you're using e.g. Windows Powershell you should:
 
-- Make sure you have GO installed. You can install it using [GO](https://go.dev/doc/install):
+- Make sure you have MinGW installed. You can install it using [VisualStudio](https://code.visualstudio.com/docs/cpp/config-mingw#_prerequisites):
 
   ```
-  go version
+  gcc --version
   ```
   
 - [Download](https://github.com/JakubStachh/C-Simple-Projects/archive/refs/heads/main.zip) the code
 - Unpack the zip file
-- Find the `GO-Projects-main\GO Projects\`
-- Open the folder of the program You want to try out `GO-Projects-main\GO Projects\Anagram Check`
+- Open the folder of the program You want to try out
 - and then run:
-  
-  ```sh
-  go run AnagramCheck.go
-  ```
 
+  **For C**:
+  ```
+  g++ hello.c -o hello.exe
+  ```
+  **For C++**:
+  ```
+  g++ hello.cpp -o hello.exe
+  ```
+- For C# you will have to check if you got `.NET SDK` installed:
+  ```
+  dotnet --version
+  ```
 ---
-
-## 📦 La Installation for `C++`
-
-### 𓀃 The Actual Installation🤌🤌
-
-#### You can use [Programiz Complier](https://www.programiz.com/cpp-programming/online-compiler/) or similar online compliers to run the code
-
-#### But if you're using e.g. Windows Powershell you should:
-
-- Make sure you have GO installed. You can install it using [GO](https://go.dev/doc/install):
-
-  ```
-  go version
-  ```
-  
-- [Download](https://github.com/JakubStachh/C-Simple-Projects/archive/refs/heads/main.zip) the code
-- Unpack the zip file
-- Find the `GO-Projects-main\GO Projects\`
-- Open the folder of the program You want to try out `GO-Projects-main\GO Projects\Anagram Check`
-- and then run:
-  
-  ```sh
-  go run AnagramCheck.go
-  ```
-
----
-
-## 📦 La Installation for `C#`
-
-### 𓀃 The Actual Installation🤌🤌
-
-#### You can use [Programiz Complier](https://www.programiz.com/csharp-programming/online-compiler/) or similar online compliers to run the code
-
-#### But if you're using e.g. Windows Powershell you should:
-
-- Make sure you have GO installed. You can install it using [GO](https://go.dev/doc/install):
-
-  ```
-  go version
-  ```
-  
-- [Download](https://github.com/JakubStachh/C-Simple-Projects/archive/refs/heads/main.zip) the code
-- Unpack the zip file
-- Find the `GO-Projects-main\GO Projects\`
-- Open the folder of the program You want to try out `GO-Projects-main\GO Projects\Anagram Check`
-- and then run:
-  
-  ```sh
-  go run AnagramCheck.go
-  ```
 
 
 ---
