@@ -84,7 +84,7 @@ Result of matrix multiplication:
 ```
 In the output:
 
-The result matrix is calculated as:
+   - The result matrix is calculated as:
 
 $$
 \large\text{result}[0][0] = (1 \times 5) + (2 \times 7) = 19
