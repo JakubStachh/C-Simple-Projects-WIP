@@ -9,10 +9,11 @@ This program finds the **one missing number** in a sequence of `n` natural numbe
 Given an array of size `n - 1` containing distinct numbers from `1` to `n`, **find the missing number**.
 
 ### 🧾 Example:
-Array: `[1, 2, 4, 5, 6]`  
-Range: `1` to `6`  
-Missing number = `3`
-
+ ```
+ Array: `[1, 2, 4, 5, 6]`  
+ Range: `1` to `6`  
+ Missing number = `3`
+ ```
 ---
 
 ## ⚙️ Logic & Approach
@@ -20,7 +21,7 @@ Missing number = `3`
 We know the **sum of the first n natural numbers** is:
 
 $$
-\text{Sum} = \frac{n(n+1)}{2}
+\large \text{Sum} = \frac{n(n+1)}{2}
 $$
 
 Steps:
