@@ -1,32 +1,55 @@
-# C - Simple Projects 🚀  
+# 🧮 Factorial Calculator in C
 
-A collection of 'beginner-friendly' **C programming projects** covering **algorithms, problem-solving, and small applications**. Each project is self-contained and organized into folders for easy access.  
-
-📌 **Perfect for:**  
-✔️ Beginners learning C  
-✔️ Interview preparation  
-✔️ Small coding exercises  
+This program calculates the **factorial** of a number using **recursion** in C.
 
 ---
 
-## 📂 Project List  
+## 🔍 What is Factorial?
 
-| #  | Project Name               | Description |
-|----|----------------------------|-------------|
-| 1️⃣ | **Anagram Checker**        | Checks if two words are anagrams |
-| 2️⃣ | **Prime Number Checker**   | Determines if a number is prime |
-| 3️⃣ | **Fibonacci Generator**    | Generates Fibonacci series up to `n` |
-| 4️⃣ | **Palindrome Checker**     | Verifies if a string is a palindrome |
-| 5️⃣ | **Tic-Tac-Toe**            | A simple CLI Tic-Tac-Toe game |
-| 6️⃣ | **Temperature Converter**  | Converts Celsius to Fahrenheit and vice versa |
-| ... | *More projects coming soon!* 🚀 |
+The **factorial** of a number `n` is the product of all positive integers less than or equal to `n`.  
+It's denoted as `n!`
+
+**Examples:**
+
+- `5! = 5 × 4 × 3 × 2 × 1 = 120`
+- `0! = 1` (by definition)
 
 ---
 
-## 🔧 Installation & Usage  
+## 🧑‍💻 Code:
 
-### **1️⃣ Clone this repository**  
-```sh
-git clone https://github.com/yourusername/C-Simple-Projects.git
-cd C-Simple-Projects
+```c
+#include <stdio.h>
 
+// Recursive function to calculate factorial
+long long factorial(int n) {
+    return (n == 0) ? 1 : n * factorial(n - 1);
+}
+
+int main() {
+    int num;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    printf("Factorial of %d is %lld\n", num, factorial(num));
+    return 0;
+}
+```
+
+---
+## 📌 Explanation:
+- `factorial(int n)` is a recursive function:
+
+    - If `n` is `0`, return `1`.
+
+    - Otherwise, return `n × factorial(n - 1)`.
+
+- `main()` takes input from the user and calls the factorial function.
+
+---
+## 🚀 Sample Output:
+
+```
+Enter a number: 5
+Factorial of 5 is 120
+```
