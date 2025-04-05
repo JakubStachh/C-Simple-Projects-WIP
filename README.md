@@ -120,7 +120,7 @@ A collection of 'beginner-friendly' **C programming projects** covering **algori
   csc hello.cs
   .\Hello.exe
   ```
-- If it doesn't work you can:
+- If it doesn't work, you can:
 
   Create new console:
   ```
