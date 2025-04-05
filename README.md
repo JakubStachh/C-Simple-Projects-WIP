@@ -124,6 +124,7 @@ A collection of 'beginner-friendly' **C programming projects** covering **algori
 - Then compile & run the C# program:
   ```
   csc hello.cs
+  .\Hello.exe
   ```
 - If it doesn't work you can:
 
