@@ -157,7 +157,7 @@ A collection of 'beginner-friendly' **C programming projects** covering **algori
 # THANK YOU!
 ```python
 1. And Voilà! You've done it! You've actually checked my code! 
-2. Thank You. All I'm hoping for is... that I hadn't make any mistakes.
+2. Thank You. All I'm hoping for is... that I hadn't made any mistakes.
 3. Well... maybe... rather: that they're not THAT serious.....
 4. If there are any: I'm sorry, and I will update it when the right time comes.... 
 5. But for now... let's enjoy this peacful while with - beloved by many - EL SNOOPY!!!
