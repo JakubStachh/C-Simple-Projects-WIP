@@ -2,6 +2,7 @@
 
 ## 📝 **Armstrong Number Definition**
 An **Armstrong number** (also known as a narcissistic number or pluperfect number) is a number that is equal to the sum of its own digits, each raised to the power of the number of digits. For example:
+##
 #### - 153 is an Armstrong number because:
   
   $$ 
