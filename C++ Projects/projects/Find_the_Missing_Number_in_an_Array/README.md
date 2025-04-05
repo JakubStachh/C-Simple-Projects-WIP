@@ -1,32 +1,71 @@
-# C - Simple Projects 🚀  
+# Find Missing Number in Array
 
-A collection of 'beginner-friendly' **C programming projects** covering **algorithms, problem-solving, and small applications**. Each project is self-contained and organized into folders for easy access.  
+## 📝 **Overview**
 
-📌 **Perfect for:**  
-✔️ Beginners learning C  
-✔️ Interview preparation  
-✔️ Small coding exercises  
+This C++ program finds the **missing number** in a sequence of integers ranging from `1` to `n`, where `n` is the total number of integers in the sequence. The sequence contains all numbers from `1` to `n`, except one. The program calculates the missing number by leveraging the sum of the first `n` natural numbers.
 
 ---
 
-## 📂 Project List  
+## 💻 **Program Explanation**
 
-| #  | Project Name               | Description |
-|----|----------------------------|-------------|
-| 1️⃣ | **Anagram Checker**        | Checks if two words are anagrams |
-| 2️⃣ | **Prime Number Checker**   | Determines if a number is prime |
-| 3️⃣ | **Fibonacci Generator**    | Generates Fibonacci series up to `n` |
-| 4️⃣ | **Palindrome Checker**     | Verifies if a string is a palindrome |
-| 5️⃣ | **Tic-Tac-Toe**            | A simple CLI Tic-Tac-Toe game |
-| 6️⃣ | **Temperature Converter**  | Converts Celsius to Fahrenheit and vice versa |
-| ... | *More projects coming soon!* 🚀 |
+### **Steps**:
+1. **Input**: The program takes an array of integers where one number from the sequence `1` to `n` is missing.
+2. **Find Missing Number**: It calculates the sum of the first `n` natural numbers using the formula: 
+   \[
+   \text{totalSum} = \frac{n \times (n + 1)}{2}
+   \]
+   It then calculates the sum of the numbers in the array (`arrSum`) and finds the difference between the two sums, which will give the missing number.
+3. **Output**: The program prints the missing number.
 
 ---
 
-## 🔧 Installation & Usage  
+## 🧑‍💻 **Code**:
 
-### **1️⃣ Clone this repository**  
-```sh
-git clone https://github.com/yourusername/C-Simple-Projects.git
-cd C-Simple-Projects
+```cpp
+#include <iostream>
+#include <vector>
+using namespace std;
 
+int findMissingNumber(const vector<int>& arr, int n) {
+    int totalSum = n * (n + 1) / 2; // Formula for sum of first n natural numbers
+    int arrSum = 0;
+    
+    for (int num : arr) { // Sum all elements in the array
+        arrSum += num;
+    }
+    
+    return totalSum - arrSum; // The missing number is the difference
+}
+
+int main() {
+    vector<int> arr = {1, 2, 4, 5, 6}; // Sample array with a missing number
+    int n = 6; // The total number of elements in the sequence (1 to n)
+    
+    cout << "Missing number: " << findMissingNumber(arr, n) << endl;
+    return 0;
+}
+🚀 How It Works:
+1. The findMissingNumber() Function:
+Input: The function takes an array arr[] of integers and an integer n, which represents the total number of elements in the sequence.
+
+Logic:
+
+The total sum of the sequence from 1 to n is calculated using the formula:
+
+$$
+\text{totalSum} = \frac{n \times (n + 1)}{2}
+$$
+
+The function then iterates through the array and calculates the sum of the elements (arrSum).
+
+The missing number is simply the difference between the total sum (totalSum) and the sum of the array (arrSum).
+
+2. Main Function:
+The main() function initializes a sample array arr[] with a missing number, calculates the total number of elements (n), and calls the findMissingNumber() function to find and print the missing number.
+
+🖼️ Sample Output:
+Example - Output for the array {1, 2, 4, 5, 6}:
+yaml
+Copy
+Edit
+Missing number: 3
