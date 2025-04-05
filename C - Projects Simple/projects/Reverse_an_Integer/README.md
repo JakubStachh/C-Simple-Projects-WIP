@@ -10,7 +10,9 @@ This C program takes an integer input from the user and reverses the digits of t
    - The remainder when the number is divided by 10 (`num % 10`) gives the last digit.
    - The last digit is then added to the reversed number (which is initially 0).
    - The number is divided by 10 to remove the last digit.
+
 2. This process continues until the number becomes 0.
+
 3. The reversed number is then returned.
 
 ---
