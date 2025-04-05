@@ -1,32 +1,75 @@
-# C - Simple Projects 🚀  
+# 🔤 Count Character Frequency in a Text (C Program)
 
-A collection of 'beginner-friendly' **C programming projects** covering **algorithms, problem-solving, and small applications**. Each project is self-contained and organized into folders for easy access.  
-
-📌 **Perfect for:**  
-✔️ Beginners learning C  
-✔️ Interview preparation  
-✔️ Small coding exercises  
+## 📝 **Program Description**
+This program takes a line of text and a character as input, then counts how many times that character appears in the text. It's a great example of working with strings, loops, and character operations in C.
 
 ---
 
-## 📂 Project List  
+## 📚 **Program Explanation**
 
-| #  | Project Name               | Description |
-|----|----------------------------|-------------|
-| 1️⃣ | **Anagram Checker**        | Checks if two words are anagrams |
-| 2️⃣ | **Prime Number Checker**   | Determines if a number is prime |
-| 3️⃣ | **Fibonacci Generator**    | Generates Fibonacci series up to `n` |
-| 4️⃣ | **Palindrome Checker**     | Verifies if a string is a palindrome |
-| 5️⃣ | **Tic-Tac-Toe**            | A simple CLI Tic-Tac-Toe game |
-| 6️⃣ | **Temperature Converter**  | Converts Celsius to Fahrenheit and vice versa |
-| ... | *More projects coming soon!* 🚀 |
+1. **Input Section:**
+   - The user is asked to input a string (up to 500 characters).
+   - Then the user inputs a single character to search for.
+
+2. **Counting Logic:**
+   - The program uses a `for` loop to iterate over each character in the string.
+   - It checks whether each character matches the target character.
+   - A counter is incremented every time a match is found.
+
+3. **Output Section:**
+   - Displays how many times the entered character appears in the input text.
 
 ---
 
-## 🔧 Installation & Usage  
+## 🧑‍💻 **Code:**
 
-### **1️⃣ Clone this repository**  
-```sh
-git clone https://github.com/yourusername/C-Simple-Projects.git
-cd C-Simple-Projects
+```c
+#include <stdio.h>
+#include <string.h>
 
+int main() {
+    char text[500], ch;
+    int count = 0;
+
+    printf("Enter a text (max 500 characters):\n");
+    getchar(); // Clear input buffer before reading line
+    fgets(text, sizeof(text), stdin);
+
+    printf("Enter a character to count: ");
+    scanf(" %c", &ch);
+
+    for (int i = 0; i < strlen(text); i++) {
+        if (text[i] == ch) count++;
+    }
+
+    printf("The character '%c' appears %d times.\n", ch, count);
+    return 0;
+}
+```
+---
+
+## 🚀 Example Run
+**Input:**
+
+```
+Enter a text (max 500 characters):
+Programming is powerful and practical.
+Enter a character to count: p
+```
+
+**Output:**
+
+```
+The character 'p' appears 2 times.
+```
+
+---
+
+## ⚡ How the Program Works
+- `fgets()` is used to safely capture the entire line of text including spaces.
+
+- `scanf(" %c", &ch)` reads the character to count (note the space to consume newline).
+
+- The loop runs through the text and increments a counter whenever a match is found.
+
+- At the end, the total count is printed to the user.
