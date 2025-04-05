@@ -4,14 +4,14 @@
 ## 📝 **Armstrong Number Definition**
 An **Armstrong number** (also known as a narcissistic number or pluperfect number) is a number that is equal to the sum of its own digits, each raised to the power of the number of digits. For example:
 ##
-#### - 153 is an Armstrong number because:
+#### - `153` is an Armstrong number because:
   
   $$ 
   \large 1^3 + 5^3 + 3^3 = 153 
   $$
   ##
   
-#### - 370 is an Armstrong number because:
+#### - `370` is an Armstrong number because:
   
   $$ 
   \large 3^3 + 7^3 + 0^3 = 370 
@@ -110,7 +110,7 @@ Enter a number: 123
  - For example, for the number 153:
 
  $$ 
-\large 1^3 + 5^3 + 3^3 \text{ = 153} \text { - so it is an **Armstrong** number.}
+\large 1^3 + 5^3 + 3^3 \text{ = 153} \text { - so it is an Armstrong number.}
  $$
  ##
  - The function checks if the sum equals the original number and prints the appropriate message.
