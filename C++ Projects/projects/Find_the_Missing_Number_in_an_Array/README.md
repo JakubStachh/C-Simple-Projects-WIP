@@ -12,12 +12,15 @@ This C++ program finds the **missing number** in a sequence of integers ranging 
 1. **Input**: The program takes an array of integers where one number from the sequence `1` to `n` is missing.
 
 2. **Find Missing Number**: It calculates the sum of the first `n` natural numbers using the formula: 
+
    $$
-   \text{totalSum} = \frac{n \times (n + 1)}{2}
+   \large \text{totalSum} = \frac{n \times (n + 1)}{2}
    $$
+   ##
+   
    It then calculates the sum of the numbers in the array (`arrSum`) and finds the difference between the two sums, which will give the missing number.
 
-3. **Output**: The program prints the missing number.
+4. **Output**: The program prints the missing number.
 
 ---
 
