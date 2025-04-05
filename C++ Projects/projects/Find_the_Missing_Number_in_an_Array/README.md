@@ -44,19 +44,23 @@ int main() {
     cout << "Missing number: " << findMissingNumber(arr, n) << endl;
     return 0;
 }
-🚀 How It Works:
-1. The findMissingNumber() Function:
-Input: The function takes an array arr[] of integers and an integer n, which represents the total number of elements in the sequence.
+```
 
-Logic:
+---
+## 🚀 How It Works:
+### 1. The `findMissingNumber()` Function:
+- **Input**: The function takes an array `arr[]` of integers and an integer `n`, which represents the total number of elements in the sequence.
 
-The total sum of the sequence from 1 to n is calculated using the formula:
+- **Logic:**
+
+    - The total sum of the sequence from `1` to `n` is calculated using the formula:
 
 $$
-\text{totalSum} = \frac{n \times (n + 1)}{2}
+\large \text{totalSum} = \frac{n \times (n + 1)}{2}
 $$
+##
 
-The function then iterates through the array and calculates the sum of the elements (arrSum).
+    - The function then iterates through the array and calculates the sum of the elements (arrSum).
 
 The missing number is simply the difference between the total sum (totalSum) and the sum of the array (arrSum).
 
