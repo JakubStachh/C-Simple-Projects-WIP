@@ -100,22 +100,10 @@ Enter a number: 123
 
 - For example, for the number 153:
 
-1
-3
-+
-5
-3
-+
-3
-3
-=
-153
-1 
-3
- +5 
-3
- +3 
-3
- =153, so it is an Armstrong number.
+  $$ 
+  \large 1^3 + 5^3 + 3^3 = 153 {text so it is an Armstrong number.}
+  $$
+  ##
+
 
 The function checks if the sum equals the original number and prints the appropriate message.
