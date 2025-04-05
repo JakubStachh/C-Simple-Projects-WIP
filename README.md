@@ -71,21 +71,16 @@ A collection of 'beginner-friendly' **C programming projects** covering **algori
 |‎ ‎ ‎4️⃣|[Fibonacci_Series](https://github.com/JakubStachh/C-Simple-Projects/tree/main/C%23%20projects/projects/Fibonacci_Series)|This program calculates the Fibonacci number at a given position using two different approaches: Recursive and Iterative.|
 |‎‎ ‎ 5️⃣|[Find_Factorial](https://github.com/JakubStachh/C-Simple-Projects/tree/main/C%23%20projects/projects/Find_Factorial)|This program calculates the factorial of a given number using two different approaches: Recursive and Iterative.|
 |‎ ‎ 6️⃣|[Find_Missing_Number_in_Array](https://github.com/JakubStachh/C-Simple-Projects/tree/main/C%23%20projects/projects/Find_Missing_Number_in_Array)|This program identifies the **missing number** in an array that contains all numbers from 1 to `n`, except for one missing number|
-|‎‎ ‎ 7️⃣|[Library_Management_System](https://github.com/JakubStachh/C-Simple-Projects/tree/main/C%23%20projects/projects/Library_Management_System)||
-|‎‎ ‎ 8️⃣|[]()||
-|‎‎ ‎ 9️⃣|[]()||
-|1️⃣0️⃣|[]()||
-|1️⃣1️⃣|[]()||
-|1️⃣2️⃣|[]()||
-|1️⃣3️⃣|[]()||
-|1️⃣4️⃣|[]()||
-|1️⃣5️⃣|[]()||
-|1️⃣6️⃣|[]()||
-|1️⃣7️⃣|[]()||
-|1️⃣8️⃣|[]()||
-|1️⃣9️⃣|[]()||
-|2️⃣0️⃣|[]()||
-|2️⃣1️⃣|[]()||
+|‎‎ ‎ 7️⃣|[Library_Management_System](https://github.com/JakubStachh/C-Simple-Projects/tree/main/C%23%20projects/projects/Library_Management_System)|This is a simple console-based library management system that allows users to add, remove, and view books in a library|
+|‎‎ ‎ 8️⃣|[Linked_List_Implementation](https://github.com/JakubStachh/C-Simple-Projects/tree/main/C%23%20projects/projects/Linked_List_Implementation)|This C# program demonstrates how to implement a simple singly linked list with basic operations|
+|‎‎ ‎ 9️⃣|[Linq_and_Lambda_Expressions](https://github.com/JakubStachh/C-Simple-Projects/tree/main/C%23%20projects/projects/Linq_and_Lambda_Expressions)|This C# program demonstrates the use of LINQ|
+|1️⃣0️⃣|[Palindrome_Checker](https://github.com/JakubStachh/C-Simple-Projects/tree/main/C%23%20projects/projects/Palindrome_Checker)|This C# program checks if the input string is a palindrome|
+|1️⃣1️⃣|[Reverse_Words_in_a_Sentence](https://github.com/JakubStachh/C-Simple-Projects/tree/main/C%23%20projects/projects/Reverse_Words_in_a_Sentence)|This C# program takes a sentence as input from the user and reverses the order of words in that sentence|
+|1️⃣2️⃣|[Simple_Calculator](https://github.com/JakubStachh/C-Simple-Projects/tree/main/C%23%20projects/projects/Simple_Calculator)|This C# program functions as a simple calculator|
+|1️⃣3️⃣|[Sorting_Algorithms](https://github.com/JakubStachh/C-Simple-Projects/tree/main/C%23%20projects/projects/Sorting_Algorithms)|This C# program demonstrates the Bubble Sort algorithm|
+|1️⃣4️⃣|[Student_Management_System](https://github.com/JakubStachh/C-Simple-Projects/tree/main/C%23%20projects/projects/Student_Management_System)|This C# program simulates a Student Management System|
+|1️⃣5️⃣|[Sudoku_Solver](https://github.com/JakubStachh/C-Simple-Projects/tree/main/C%23%20projects/projects/Sudoku_Solver)|This C# program solves a given Sudoku puzzle using a backtracking algorithm|
+|1️⃣6️⃣|[Do_List_Application](https://github.com/JakubStachh/C-Simple-Projects/tree/main/C%23%20projects/projects/To-Do_List_Application)|The application uses a simple list to store the tasks and provides a command-line interface for interacting with the to-do list|
 
 ---
 
