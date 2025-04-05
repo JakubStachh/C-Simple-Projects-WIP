@@ -56,7 +56,7 @@ A collection of 'beginner-friendly' **C programming projects** covering **algori
 |1️⃣7️⃣|[Reverse_a_String](https://github.com/JakubStachh/C-Simple-Projects/edit/main/C%2B%2B%20Projects/projects/Reverse_a_String/README.md)|This C++ program reverses a given string using the `std::reverse` function from the `<algorithm>` library|
 |1️⃣8️⃣|[Sort_an_Array_Using_Bubble_Sort](https://github.com/JakubStachh/C-Simple-Projects/tree/main/C%2B%2B%20Projects/projects/Sum_of_Digits_of_a_Number)|This C++ program implements the Bubble Sort algorithm, which is used to sort an array in ascending order|
 |1️⃣9️⃣|[Sum_of_Digits_of_a_Number](https://github.com/JakubStachh/C-Simple-Projects/tree/main/C%2B%2B%20Projects/projects/Sum_of_Digits_of_a_Numbe)|This C++ program calculates the sum of the digits of a given number.|
-|1️⃣9️⃣|[Swap_Two_Numbers_Without_a_Temporary_Variable](https://github.com/JakubStachh/C-Simple-Projects/tree/main/C%2B%2B%20Projects/projects/Swap_Two_Numbers_Without_a_Temporary_Variable)|This C++ program demonstrates how to swap the values of two variables without using a temporary variable|
+|2️⃣0️⃣|[Swap_Two_Numbers_Without_a_Temporary_Variable](https://github.com/JakubStachh/C-Simple-Projects/tree/main/C%2B%2B%20Projects/projects/Swap_Two_Numbers_Without_a_Temporary_Variable)|This C++ program demonstrates how to swap the values of two variables without using a temporary variable|
 
 ---
 
