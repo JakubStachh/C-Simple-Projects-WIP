@@ -1,32 +1,46 @@
-# C - Simple Projects 🚀  
+# 🔁 Duplicate Finder in C
 
-A collection of 'beginner-friendly' **C programming projects** covering **algorithms, problem-solving, and small applications**. Each project is self-contained and organized into folders for easy access.  
-
-📌 **Perfect for:**  
-✔️ Beginners learning C  
-✔️ Interview preparation  
-✔️ Small coding exercises  
+This program finds and displays the **duplicate elements** present in an array of integers.
 
 ---
 
-## 📂 Project List  
+## 🧠 What It Does
 
-| #  | Project Name               | Description |
-|----|----------------------------|-------------|
-| 1️⃣ | **Anagram Checker**        | Checks if two words are anagrams |
-| 2️⃣ | **Prime Number Checker**   | Determines if a number is prime |
-| 3️⃣ | **Fibonacci Generator**    | Generates Fibonacci series up to `n` |
-| 4️⃣ | **Palindrome Checker**     | Verifies if a string is a palindrome |
-| 5️⃣ | **Tic-Tac-Toe**            | A simple CLI Tic-Tac-Toe game |
-| 6️⃣ | **Temperature Converter**  | Converts Celsius to Fahrenheit and vice versa |
-| ... | *More projects coming soon!* 🚀 |
+- Takes an integer array.
+- Compares each element with every other element ahead of it.
+- If a match is found, it's printed as a duplicate (only once per value).
 
 ---
 
-## 🔧 Installation & Usage  
+## 💻 Code:
 
-### **1️⃣ Clone this repository**  
-```sh
-git clone https://github.com/yourusername/C-Simple-Projects.git
-cd C-Simple-Projects
+```c
+#include <stdio.h>
 
+void findDuplicates(int arr[], int size) {
+    printf("Duplicate elements: ");
+    for (int i = 0; i < size - 1; i++) {
+        for (int j = i + 1; j < size; j++) {
+            if (arr[i] == arr[j]) {
+                printf("%d ", arr[i]);
+                break;
+            }
+        }
+    }
+    printf("\n");
+}
+
+int main() {
+    int arr[] = {1, 2, 3, 4, 5, 2, 3, 6};
+    int size = sizeof(arr) / sizeof(arr[0]);
+
+    findDuplicates(arr, size);
+    return 0;
+}
+```
+
+---
+## 🧪 Sample Output
+```
+Duplicate elements: 2 3
+```
