@@ -53,12 +53,12 @@ int main() {
 ## 🧪 Sample Output
 - **Example 1:**
 
-   - **Input:**
+    - **Input:**
 
 ```
 Enter a number: 12345
 ```
-   - **Output:**
+    - **Output:**
 ```
 Reversed number: 54321
 ```
