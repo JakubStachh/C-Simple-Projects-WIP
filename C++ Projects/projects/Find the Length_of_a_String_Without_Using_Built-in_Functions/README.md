@@ -9,8 +9,11 @@ This C++ program calculates the length of a given string manually by iterating t
 ## 💻 **Program Explanation**
 
 ### **Steps**:
+
 1. **Input**: The program takes a string (`"Hello, World!"` in this case).
+
 2. **Length Calculation**: The function `stringLength()` calculates the length of the string by counting characters until the null-terminator (`'\0'`).
+
 3. **Output**: The program prints the length of the string.
 
 ---
