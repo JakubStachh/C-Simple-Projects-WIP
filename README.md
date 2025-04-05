@@ -116,7 +116,8 @@ A collection of 'beginner-friendly' **C programming projects** covering **algori
   ```
   g++ hello.cpp -o hello.exe
   ```
-- For C# you will have to check if you got `.NET SDK` installed:
+  ##
+- For C# You will have to check if you got `.NET SDK` installed:
   ```
   dotnet --version
   ```
