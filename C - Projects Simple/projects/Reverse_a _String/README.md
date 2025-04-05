@@ -1,32 +1,49 @@
-# C - Simple Projects 🚀  
+# 🔄 Reverse String in C
 
-A collection of 'beginner-friendly' **C programming projects** covering **algorithms, problem-solving, and small applications**. Each project is self-contained and organized into folders for easy access.  
-
-📌 **Perfect for:**  
-✔️ Beginners learning C  
-✔️ Interview preparation  
-✔️ Small coding exercises  
+This C program takes a string and reverses it in-place using the **two-pointer** approach. The string is reversed by swapping characters from both ends towards the center.
 
 ---
 
-## 📂 Project List  
+## ⚙️ Logic & Approach
 
-| #  | Project Name               | Description |
-|----|----------------------------|-------------|
-| 1️⃣ | **Anagram Checker**        | Checks if two words are anagrams |
-| 2️⃣ | **Prime Number Checker**   | Determines if a number is prime |
-| 3️⃣ | **Fibonacci Generator**    | Generates Fibonacci series up to `n` |
-| 4️⃣ | **Palindrome Checker**     | Verifies if a string is a palindrome |
-| 5️⃣ | **Tic-Tac-Toe**            | A simple CLI Tic-Tac-Toe game |
-| 6️⃣ | **Temperature Converter**  | Converts Celsius to Fahrenheit and vice versa |
-| ... | *More projects coming soon!* 🚀 |
+1. The function **`reverseString()`** uses two pointers:
+   - One starting from the beginning (`left`) and one from the end (`right`).
+2. It swaps the characters at the `left` and `right` indices until the pointers meet in the middle.
+3. The string is modified in place, and no additional memory is used for the reversed string.
 
 ---
 
-## 🔧 Installation & Usage  
+## 💻 Code
 
-### **1️⃣ Clone this repository**  
-```sh
-git clone https://github.com/yourusername/C-Simple-Projects.git
-cd C-Simple-Projects
+```c
+#include <stdio.h>
+#include <string.h>
 
+// Function to reverse a string
+void reverseString(char *str) {
+    int left = 0, right = strlen(str) - 1;
+    
+    // Swap characters from both ends towards the center
+    while (left < right) {
+        char temp = str[left];
+        str[left] = str[right];
+        str[right] = temp;
+        left++;
+        right--;
+    }
+}
+
+int main() {
+    char str[] = "hello";  // Original string
+    reverseString(str);  // Reverse the string
+    printf("Reversed string: %s\n", str);  // Output the reversed string
+    return 0;
+}
+```
+
+---
+## 🧪 Sample Output
+**Output:**
+```
+Reversed string: olleh
+```
