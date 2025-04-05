@@ -1,32 +1,89 @@
-# C - Simple Projects 🚀  
+# LINQ Example in C#
 
-A collection of 'beginner-friendly' **C programming projects** covering **algorithms, problem-solving, and small applications**. Each project is self-contained and organized into folders for easy access.  
+## 🧑‍💻 **Overview**
 
-📌 **Perfect for:**  
-✔️ Beginners learning C  
-✔️ Interview preparation  
-✔️ Small coding exercises  
-
----
-
-## 📂 Project List  
-
-| #  | Project Name               | Description |
-|----|----------------------------|-------------|
-| 1️⃣ | **Anagram Checker**        | Checks if two words are anagrams |
-| 2️⃣ | **Prime Number Checker**   | Determines if a number is prime |
-| 3️⃣ | **Fibonacci Generator**    | Generates Fibonacci series up to `n` |
-| 4️⃣ | **Palindrome Checker**     | Verifies if a string is a palindrome |
-| 5️⃣ | **Tic-Tac-Toe**            | A simple CLI Tic-Tac-Toe game |
-| 6️⃣ | **Temperature Converter**  | Converts Celsius to Fahrenheit and vice versa |
-| ... | *More projects coming soon!* 🚀 |
+This C# program demonstrates the use of LINQ (Language Integrated Query) to filter and sort a collection of student objects based on certain criteria. In this example, the program:
+- Filters students whose age is 19 or older.
+- Sorts them by their names in alphabetical order.
+- Displays the result on the console.
 
 ---
 
-## 🔧 Installation & Usage  
+## 💻 **Program Explanation**
 
-### **1️⃣ Clone this repository**  
-```sh
-git clone https://github.com/yourusername/C-Simple-Projects.git
-cd C-Simple-Projects
+1. **Student Class**:
+   - Contains two properties: `Name` and `Age` to store the details of each student.
 
+2. **LINQ Operations**:
+   - `Where(s => s.Age >= 19)`: Filters students who are 19 years old or older.
+   - `OrderBy(s => s.Name)`: Sorts the filtered students by their name in ascending order.
+   - `ToList()`: Converts the filtered and sorted result into a list.
+
+3. **Display**:
+   - The `foreach` loop is used to display the names and ages of the filtered and sorted students.
+
+---
+
+## 🧑‍💻 **Code:**
+
+```csharp
+using System;
+using System.Linq;
+using System.Collections.Generic;
+
+namespace LinqExample
+{
+    class Program
+    {
+        class Student
+        {
+            public string Name { get; set; }
+            public int Age { get; set; }
+        }
+
+        static void Main(string[] args)
+        {
+            List<Student> students = new List<Student>
+            {
+                new Student { Name = "John", Age = 18 },
+                new Student { Name = "Sarah", Age = 22 },
+                new Student { Name = "Paul", Age = 20 },
+                new Student { Name = "Mary", Age = 19 }
+            };
+
+            var sortedStudents = students
+                .Where(s => s.Age >= 19)
+                .OrderBy(s => s.Name)
+                .ToList();
+
+            foreach (var student in sortedStudents)
+            {
+                Console.WriteLine($"{student.Name}, {student.Age}");
+            }
+        }
+    }
+}
+```
+
+---
+## 🚀 Example Run:
+### Input/Output Example:
+```
+Mary, 19
+Paul, 20
+Sarah, 22
+```
+
+---
+## 🔍 Explanation:
+### LINQ `Where` Method:
+
+- Filters the `students` list to include only those with `Age >= 19`.
+
+ ### LINQ `OrderBy` Method:
+
+- Sorts the filtered students alphabetically by their `Name`.
+
+### `foreach` Loop:
+
+- Iterates through the sorted list and prints each student's name and age.
