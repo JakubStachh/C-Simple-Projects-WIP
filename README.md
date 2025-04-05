@@ -13,9 +13,9 @@ A collection of 'beginner-friendly' **C programming projects** covering **algori
 |‎‎‎‎‎‎‎ ‎ 3️⃣|[Calculator](https://github.com/JakubStachh/C-Simple-Projects/tree/main/C%20-%20Projects%20Simple/projects/Calculator)|A basic calculator performs simple arithmetic operations such as addition, subtraction, multiplication, and division|
 |‎ ‎ ‎4️⃣|[Character_Counter](https://github.com/JakubStachh/C-Simple-Projects/tree/main/C%20-%20Projects%20Simple/projects/Character_Counter)|This program takes a line of text and a character as input, then counts how many times that character appears in the text|
 |‎‎ ‎ 5️⃣|[Check_for_Palindrome](https://github.com/JakubStachh/C-Simple-Projects/tree/main/C%20-%20Projects%20Simple/projects/Check_for_Palindrome)|Uses two pointers (`left` and `right`) to compare characters from both ends of the string|
-|‎ ‎ 6️⃣|[]()||
-|‎‎ ‎ 7️⃣|[]()|
-|‎‎ ‎ 8️⃣|[]()||
+|‎ ‎ 6️⃣|[Check_if_a_Number_is_Prime](https://github.com/JakubStachh/C-Simple-Projects/tree/main/C%20-%20Projects%20Simple/projects/Check_if_a_Number_is_Prime)|The loop runs from `2` to `√n` (i.e., while `i * i <= n`)|
+|‎‎ ‎ 7️⃣|[Contact_List](https://github.com/JakubStachh/C-Simple-Projects/tree/main/C%20-%20Projects%20Simple/projects/Contact_List)|A simple Contact List Program built in C to add, view, and delete contacts using a structured approach|
+|‎‎ ‎ 8️⃣|[Count_the_Number_of_Vowels_and_Consonants_in_a_String](https://github.com/JakubStachh/C-Simple-Projects/tree/main/C%20-%20Projects%20Simple/projects/Count%20the%20Number_of_Vowels_and_Consonants_in_a_String)|This program takes a string input and counts the number of vowels and consonants present in it|
 |‎‎ ‎ 9️⃣|[]()||
 |1️⃣0️⃣|[]()||
 |1️⃣1️⃣|[]()||
