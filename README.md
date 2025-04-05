@@ -103,7 +103,7 @@ A collection of 'beginner-friendly' **C programming projects** covering **algori
   go version
   ```
   
-- [Download](https://github.com/JakubStachh/GO-Projects/archive/refs/heads/main.zip) the code
+- [Download](https://github.com/JakubStachh/C-Simple-Projects/archive/refs/heads/main.zip) the code
 - Unpack the zip file
 - Find the `GO-Projects-main\GO Projects\`
 - Open the folder of the program You want to try out `GO-Projects-main\GO Projects\Anagram Check`
@@ -129,7 +129,7 @@ A collection of 'beginner-friendly' **C programming projects** covering **algori
   go version
   ```
   
-- [Download](https://github.com/JakubStachh/GO-Projects/archive/refs/heads/main.zip) the code
+- [Download](https://github.com/JakubStachh/C-Simple-Projects/archive/refs/heads/main.zip) the code
 - Unpack the zip file
 - Find the `GO-Projects-main\GO Projects\`
 - Open the folder of the program You want to try out `GO-Projects-main\GO Projects\Anagram Check`
@@ -155,7 +155,7 @@ A collection of 'beginner-friendly' **C programming projects** covering **algori
   go version
   ```
   
-- [Download](https://github.com/JakubStachh/GO-Projects/archive/refs/heads/main.zip) the code
+- [Download](https://github.com/JakubStachh/C-Simple-Projects/archive/refs/heads/main.zip) the code
 - Unpack the zip file
 - Find the `GO-Projects-main\GO Projects\`
 - Open the folder of the program You want to try out `GO-Projects-main\GO Projects\Anagram Check`
