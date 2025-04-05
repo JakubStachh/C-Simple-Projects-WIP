@@ -6,8 +6,11 @@ This C++ program checks whether a given number is an **Armstrong number** (also 
 
 For example:
 - **153** is an Armstrong number because:
-  - \( 1^3 + 5^3 + 3^3 = 153 \).
 
+
+$$
+\large( 1^3 + 5^3 + 3^3 = 153 \).
+$$
 ---
 
 ## 💻 **Program Explanation**
