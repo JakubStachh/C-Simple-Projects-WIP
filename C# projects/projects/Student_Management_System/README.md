@@ -117,7 +117,7 @@ namespace StudentManagementSystem
 ---
 ## 🚀 Example Run:
 ### Example 1: Add and View Students
-```
+```yaml
 Welcome to the Student Management System
 Commands: add, view, update, exit
 
@@ -139,7 +139,7 @@ Name: John, Age: 20, Course: Computer Science
 ```
 
 ### Example 2: Update and View Students
-```
+```yaml
 Enter command:
 update
 Enter student name to update:
