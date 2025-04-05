@@ -1,6 +1,5 @@
 # Armstrong Number Check in C
 
----
 
 ## 📝 **Armstrong Number Definition**
 An **Armstrong number** (also known as a narcissistic number or pluperfect number) is a number that is equal to the sum of its own digits, each raised to the power of the number of digits. For example:
@@ -33,6 +32,8 @@ An **Armstrong number** (also known as a narcissistic number or pluperfect numbe
 2. **`main()` Function:**
    - It takes user input and calls the `isArmstrong()` function.
    - Based on the result, it prints whether the number is an Armstrong number or not.
+
+---
 
 ## 🧑‍💻 **Code:**
 
@@ -79,6 +80,8 @@ int main() {
     return 0;
 }
 ```
+---
+
 ## 🚀 Example Run:
 **Input:**
 ```
@@ -99,6 +102,8 @@ Enter a number: 123
 ```
 123 is not an Armstrong number.
 ```
+---
+
 ## ⚡ How the Program Works:
  - The user inputs a number, and the program calculates the sum of each digit raised to the power of the number of digits.
 
