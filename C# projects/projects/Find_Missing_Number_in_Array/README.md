@@ -5,9 +5,13 @@
 This program identifies the **missing number** in an array that contains all numbers from 1 to `n`, except for one missing number. The size of the array is `n-1` (because one number is missing).
 
 The algorithm calculates the **expected sum** of the numbers from 1 to `n` using the formula:
+
+
 $$
 \large \text{totalSum} = \frac{n \times (n+1)}{2} \]
 $$
+
+
 Then, it compares the **actual sum** of the array and finds the difference, which gives the missing number.
 
 ---
