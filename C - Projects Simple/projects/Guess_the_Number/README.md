@@ -1,32 +1,89 @@
-# C - Simple Projects 🚀  
+# 🎮 Guess the Number Game (C Program)
 
-A collection of 'beginner-friendly' **C programming projects** covering **algorithms, problem-solving, and small applications**. Each project is self-contained and organized into folders for easy access.  
-
-📌 **Perfect for:**  
-✔️ Beginners learning C  
-✔️ Interview preparation  
-✔️ Small coding exercises  
+This program implements a simple **Guess the Number** game, where the computer randomly selects a number between 1 and 100, and the user has to guess it. The game gives feedback whether the guess is too high, too low, or correct.
 
 ---
 
-## 📂 Project List  
+## 🧠 Problem Statement
 
-| #  | Project Name               | Description |
-|----|----------------------------|-------------|
-| 1️⃣ | **Anagram Checker**        | Checks if two words are anagrams |
-| 2️⃣ | **Prime Number Checker**   | Determines if a number is prime |
-| 3️⃣ | **Fibonacci Generator**    | Generates Fibonacci series up to `n` |
-| 4️⃣ | **Palindrome Checker**     | Verifies if a string is a palindrome |
-| 5️⃣ | **Tic-Tac-Toe**            | A simple CLI Tic-Tac-Toe game |
-| 6️⃣ | **Temperature Converter**  | Converts Celsius to Fahrenheit and vice versa |
-| ... | *More projects coming soon!* 🚀 |
+The goal of this program is for the user to **guess** a randomly selected number between `1` and `100`. After each guess, the program will inform the user if their guess was too high or too low until the user guesses correctly.
 
 ---
 
-## 🔧 Installation & Usage  
+## ⚙️ Logic & Approach
 
-### **1️⃣ Clone this repository**  
-```sh
-git clone https://github.com/yourusername/C-Simple-Projects.git
-cd C-Simple-Projects
+1. The program uses the **rand()** function to generate a random number between 1 and 100.
+2. The user is asked to input their guess, and the program will check if the guess is higher, lower, or equal to the random number.
+3. The program keeps track of the number of attempts and notifies the user once they correctly guess the number.
+4. The program runs in a loop until the user guesses the correct number.
 
+---
+
+## 💻 Code
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main() {
+    int number, guess, attempts = 0;
+
+    srand(time(0));  // Initialize random seed
+    number = rand() % 100 + 1;  // Generate random number between 1 and 100
+
+    printf("Guess the number between 1 and 100!\n");
+
+    do {
+        printf("Enter your guess: ");
+        scanf("%d", &guess);  // User input for guessing
+        attempts++;  // Increment the number of attempts
+
+        // Check if the guess is too high, too low, or correct
+        if (guess > number) 
+            printf("Too high!\n");
+        else if (guess < number) 
+            printf("Too low!\n");
+        else 
+            printf("Congratulations! You guessed it in %d attempts.\n", attempts);  // Correct guess
+    } while (guess != number);
+
+    return 0;
+}
+```
+🧪 Sample Output
+**Input:**
+
+```
+Enter your guess: 50
+```
+
+**Output:**
+
+```
+Too low!
+```
+
+**Input:**
+
+```
+Enter your guess: 75
+```
+
+**Output:**
+
+```
+Too high!
+```
+
+**Input:**
+
+```
+Enter your guess: 63
+```
+
+**Output:**
+
+```
+Congratulations! You guessed it in 3 attempts.
+```
