@@ -1,32 +1,87 @@
-# C - Simple Projects 🚀  
+# Matrix Multiplication Program
 
-A collection of 'beginner-friendly' **C programming projects** covering **algorithms, problem-solving, and small applications**. Each project is self-contained and organized into folders for easy access.  
+## 📝 **Overview**
 
-📌 **Perfect for:**  
-✔️ Beginners learning C  
-✔️ Interview preparation  
-✔️ Small coding exercises  
+This C++ program performs matrix multiplication on two 2x2 matrices and displays the result. It multiplies two matrices, `A` and `B`, and stores the result in a third matrix `result`. The program uses a nested loop to calculate the product of matrices.
 
 ---
 
-## 📂 Project List  
+## 💻 **How the Program Works**
 
-| #  | Project Name               | Description |
-|----|----------------------------|-------------|
-| 1️⃣ | **Anagram Checker**        | Checks if two words are anagrams |
-| 2️⃣ | **Prime Number Checker**   | Determines if a number is prime |
-| 3️⃣ | **Fibonacci Generator**    | Generates Fibonacci series up to `n` |
-| 4️⃣ | **Palindrome Checker**     | Verifies if a string is a palindrome |
-| 5️⃣ | **Tic-Tac-Toe**            | A simple CLI Tic-Tac-Toe game |
-| 6️⃣ | **Temperature Converter**  | Converts Celsius to Fahrenheit and vice versa |
-| ... | *More projects coming soon!* 🚀 |
+### **Steps**:
+1. **Matrix Initialization**:
+   - Two 2x2 matrices `A` and `B` are defined with values.
+   
+2. **Matrix Multiplication**:
+   - The `multiplyMatrices()` function performs matrix multiplication. The function iterates over the rows of matrix `A` and the columns of matrix `B`, calculating the sum of the products of corresponding elements.
+   
+3. **Output**:
+   - The resulting matrix is printed row by row.
 
 ---
 
-## 🔧 Installation & Usage  
+## 🧑‍💻 **Code**:
 
-### **1️⃣ Clone this repository**  
-```sh
-git clone https://github.com/yourusername/C-Simple-Projects.git
-cd C-Simple-Projects
+```cpp
+#include <iostream>
+using namespace std;
 
+void multiplyMatrices(int A[2][2], int B[2][2], int result[2][2]) {
+    for (int i = 0; i < 2; i++) {
+        for (int j = 0; j < 2; j++) {
+            result[i][j] = 0;
+            for (int k = 0; k < 2; k++) {
+                result[i][j] += A[i][k] * B[k][j];
+            }
+        }
+    }
+}
+
+int main() {
+    int A[2][2] = {{1, 2}, {3, 4}};
+    int B[2][2] = {{5, 6}, {7, 8}};
+    int result[2][2];
+    
+    multiplyMatrices(A, B, result);
+
+    cout << "Result of matrix multiplication: \n";
+    for (int i = 0; i < 2; i++) {
+        for (int j = 0; j < 2; j++) {
+            cout << result[i][j] << " ";
+        }
+        cout << endl;
+    }
+    return 0;
+}
+```
+
+---
+## 🚀 How It Works:
+### 1. Matrix Initialization:
+- Two 2x2 matrices, `A` and `B`, are initialized with predefined values.
+
+### 2. Matrix Multiplication:
+- The `multiplyMatrices` function takes three arguments: two 2x2 matrices (`A`, `B`) and an empty result matrix (`result`).
+
+- It performs the multiplication using the formula:
+
+$$
+\large \text{result}[i][j] = \sum_{k=0}^{n-1} A[i][k] \times B[k][j]
+$$
+
+
+​where i represents the row index of matrix A, j represents the column index of matrix B, and k is the index for the sum over the product.
+
+3. Displaying the Result:
+The result of the matrix multiplication is displayed row by row using nested loops.
+
+🖼️ Sample Output:
+rust
+Copy
+Edit
+Result of matrix multiplication: 
+19 22 
+43 50
+In the output:
+
+The result matrix is calculated as:
