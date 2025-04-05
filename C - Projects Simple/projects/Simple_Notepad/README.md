@@ -1,32 +1,111 @@
-# C - Simple Projects 🚀  
+# 📝 Simple Notepad Program in C
 
-A collection of 'beginner-friendly' **C programming projects** covering **algorithms, problem-solving, and small applications**. Each project is self-contained and organized into folders for easy access.  
-
-📌 **Perfect for:**  
-✔️ Beginners learning C  
-✔️ Interview preparation  
-✔️ Small coding exercises  
+This C program implements a simple notepad that allows users to write text to a file and read text from a file.
 
 ---
 
-## 📂 Project List  
+## ⚙️ Logic & Approach
 
-| #  | Project Name               | Description |
-|----|----------------------------|-------------|
-| 1️⃣ | **Anagram Checker**        | Checks if two words are anagrams |
-| 2️⃣ | **Prime Number Checker**   | Determines if a number is prime |
-| 3️⃣ | **Fibonacci Generator**    | Generates Fibonacci series up to `n` |
-| 4️⃣ | **Palindrome Checker**     | Verifies if a string is a palindrome |
-| 5️⃣ | **Tic-Tac-Toe**            | A simple CLI Tic-Tac-Toe game |
-| 6️⃣ | **Temperature Converter**  | Converts Celsius to Fahrenheit and vice versa |
-| ... | *More projects coming soon!* 🚀 |
+1. **Write to File:**
+   - The function **`writeToFile()`** opens a file named **"notes.txt"** in write mode.
+   - It prompts the user to enter text (up to 500 characters).
+   - The entered text is written to the file using the **`fprintf()`** function.
+   - After saving the text, the file is closed.
+
+2. **Read from File:**
+   - The function **`readFromFile()`** opens the file **"notes.txt"** in read mode.
+   - It checks if the file exists. If it does, the function reads and prints the contents line by line.
+   - If the file does not exist, it informs the user that no saved notes were found.
+
+3. **Main Program:**
+   - The program presents the user with two options: 
+     1. Write to file.
+     2. Read from file.
+   - Based on the user's choice, the appropriate function is called.
 
 ---
 
-## 🔧 Installation & Usage  
+## 💻 Code
 
-### **1️⃣ Clone this repository**  
-```sh
-git clone https://github.com/yourusername/C-Simple-Projects.git
-cd C-Simple-Projects
+```c
+#include <stdio.h>
+#include <stdlib.h>
 
+// Function to write text to a file
+void writeToFile() {
+    FILE *file = fopen("notes.txt", "w");
+    if (file == NULL) {
+        printf("Error opening file.\n");
+        return;
+    }
+
+    char text[500];
+    printf("Enter text to save (max 500 characters):\n");
+    getchar(); // Clear buffer
+    fgets(text, sizeof(text), stdin);  // Read text from user
+    fprintf(file, "%s", text);  // Write text to file
+    fclose(file);  // Close the file
+    printf("Text saved successfully.\n");
+}
+
+// Function to read text from a file
+void readFromFile() {
+    FILE *file = fopen("notes.txt", "r");
+    if (file == NULL) {
+        printf("No saved notes found.\n");
+        return;
+    }
+
+    char text[500];
+    printf("Saved text:\n");
+    while (fgets(text, sizeof(text), file)) {
+        printf("%s", text);  // Print content line by line
+    }
+    fclose(file);  // Close the file
+}
+
+int main() {
+    int choice;
+
+    printf("Simple Notepad\n");
+    printf("1. Write to file\n");
+    printf("2. Read from file\n");
+    printf("Enter your choice: ");
+    scanf("%d", &choice);
+
+    // Perform the corresponding action based on user input
+    if (choice == 1) writeToFile();
+    else if (choice == 2) readFromFile();
+    else printf("Invalid choice.\n");
+
+    return 0;
+}
+```
+
+---
+## 🧪 Sample Output
+### Example 1 - Write to File:
+
+- **Input:**
+```
+Enter your choice: 1
+Enter text to save (max 500 characters):
+Hello, this is a note!
+```
+
+- **Output:
+```
+Text saved successfully.
+```
+
+### Example 2 - Read from File:
+
+- **Input:**
+```
+Enter your choice: 2
+```
+
+- **Output:**
+```
+Hello, this is a note!
+```
