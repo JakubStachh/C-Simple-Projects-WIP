@@ -64,13 +64,13 @@ int main() {
 ```
 ##
 🌟 Example:
-**Input**:
+###**Input**:
 
 ```
 Enter first string: listen
 Enter second string: silent
 ```
-**Output**:
+###**Output**:
 ```
 The strings are anagrams. ✅
 ```
