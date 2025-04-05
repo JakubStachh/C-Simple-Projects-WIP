@@ -7,10 +7,12 @@ This program identifies the **missing number** in an array that contains all num
 The algorithm calculates the **expected sum** of the numbers from 1 to `n` using the formula:
 
 
+
 $$
-\large \text{totalSum} = \frac{n \times (n+1)}{2} \]
+\large \text{totalSum} = \frac{n \times (n+1)}{2} 
 $$
 
+##
 
 Then, it compares the **actual sum** of the array and finds the difference, which gives the missing number.
 
