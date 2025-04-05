@@ -17,7 +17,7 @@ This C program checks if two input strings are anagrams of each other. An anagra
   2. It then counts the frequency of each character in both strings (converting each character to lowercase to handle case insensitivity).
   3. Finally, it compares the frequency arrays for both strings. If they are identical, the strings are anagrams.
 
-### 2. Main Function:
+### 2. `Main` Function:
 - The main function prompts the user for two strings, calls the `areAnagrams()` function, and prints whether the strings are anagrams or not.
 
 ## 💻 Code:
