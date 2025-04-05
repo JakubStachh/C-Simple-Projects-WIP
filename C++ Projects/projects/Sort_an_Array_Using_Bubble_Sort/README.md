@@ -65,7 +65,7 @@ int main() {
 
     - After each pass, the largest unsorted element moves to its correct position at the end of the array.
 
-3. Output the Sorted Array:
+### 3. Output the Sorted Array:
 After sorting, the program prints the sorted array to the console.
 
 ---
