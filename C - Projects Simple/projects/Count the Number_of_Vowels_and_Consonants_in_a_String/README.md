@@ -1,32 +1,70 @@
-# C - Simple Projects 🚀  
+# 🔡 Vowel and Consonant Counter in C
 
-A collection of 'beginner-friendly' **C programming projects** covering **algorithms, problem-solving, and small applications**. Each project is self-contained and organized into folders for easy access.  
-
-📌 **Perfect for:**  
-✔️ Beginners learning C  
-✔️ Interview preparation  
-✔️ Small coding exercises  
+This program takes a string input and counts the number of **vowels** and **consonants** present in it.
 
 ---
 
-## 📂 Project List  
+## 📘 How It Works
 
-| #  | Project Name               | Description |
-|----|----------------------------|-------------|
-| 1️⃣ | **Anagram Checker**        | Checks if two words are anagrams |
-| 2️⃣ | **Prime Number Checker**   | Determines if a number is prime |
-| 3️⃣ | **Fibonacci Generator**    | Generates Fibonacci series up to `n` |
-| 4️⃣ | **Palindrome Checker**     | Verifies if a string is a palindrome |
-| 5️⃣ | **Tic-Tac-Toe**            | A simple CLI Tic-Tac-Toe game |
-| 6️⃣ | **Temperature Converter**  | Converts Celsius to Fahrenheit and vice versa |
-| ... | *More projects coming soon!* 🚀 |
+### ✅ Steps:
+1. **Input**: The user enters a string.
+2. **Processing**:
+   - The program iterates through each character of the string.
+   - Converts each character to lowercase using `tolower()` for uniformity.
+   - Checks if the character is a letter (a-z).
+   - Determines if it's a vowel (`a, e, i, o, u`) or a consonant.
+3. **Output**: Displays the total count of vowels and consonants.
 
 ---
 
-## 🔧 Installation & Usage  
+## 💻 Code:
 
-### **1️⃣ Clone this repository**  
-```sh
-git clone https://github.com/yourusername/C-Simple-Projects.git
-cd C-Simple-Projects
+```c
+#include <stdio.h>
+#include <ctype.h>
 
+void countVowelsConsonants(char *str) {
+    int vowels = 0, consonants = 0;
+
+    for (int i = 0; str[i] != '\0'; i++) {
+        char ch = tolower(str[i]);
+        if (ch >= 'a' && ch <= 'z') {
+            if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u')
+                vowels++;
+            else
+                consonants++;
+        }
+    }
+
+    printf("Vowels: %d, Consonants: %d\n", vowels, consonants);
+}
+
+int main() {
+    char str[100];
+
+    printf("Enter a string: ");
+    scanf("%s", str);
+
+    countVowelsConsonants(str);
+    return 0;
+}
+```
+
+---
+## 🧪 Sample Run
+
+```
+Enter a string: Education
+Vowels: 5, Consonants: 4
+```
+
+---
+## 🔍 Notes
+
+- Only alphabetic characters are counted.
+
+- The program ignores spaces, digits, and special characters.
+
+- Converts input to lowercase to simplify vowel/consonant checking.
+
+- Uses `scanf("%s", str)`, so input is limited to one word (no spaces). To read full lines, `fgets()` can be used instead.
