@@ -58,7 +58,7 @@ int main() {
 ```
 Enter a number: 12345
 ```
-    - **Output:**
+   - **Output:**
 ```
 Reversed number: 54321
 ```
