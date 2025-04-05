@@ -53,23 +53,23 @@ int main() {
 
 - **Logic:**
 
-    - The total sum of the sequence from `1` to `n` is calculated using the formula:
+  - The total sum of the sequence from `1` to `n` is calculated using the formula:
 
 $$
 \large \text{totalSum} = \frac{n \times (n + 1)}{2}
 $$
 ##
 
-    - The function then iterates through the array and calculates the sum of the elements (arrSum).
+  - The function then iterates through the array and calculates the sum of the elements (`arrSum`).
 
-The missing number is simply the difference between the total sum (totalSum) and the sum of the array (arrSum).
+  - The missing number is simply the difference between the total sum (`totalSum`) and the sum of the array (`arrSum`).
 
-2. Main Function:
-The main() function initializes a sample array arr[] with a missing number, calculates the total number of elements (n), and calls the findMissingNumber() function to find and print the missing number.
+### 2. `Main` Function:
+- The `main()` function initializes a sample array `arr[]` with a missing number, calculates the total number of elements (`n`), and calls the `findMissingNumber()` function to find and print the missing number.
 
-🖼️ Sample Output:
-Example - Output for the array {1, 2, 4, 5, 6}:
-yaml
-Copy
-Edit
+---
+## 🖼️ Sample Output:
+### Example - Output for the array `{1, 2, 4, 5, 6}`:
+```yaml
 Missing number: 3
+```
