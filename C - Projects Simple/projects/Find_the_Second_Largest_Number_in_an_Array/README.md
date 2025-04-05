@@ -1,32 +1,75 @@
-# C - Simple Projects 🚀  
+# 🔢 Find the Second Largest Number in an Array (C Program)
 
-A collection of 'beginner-friendly' **C programming projects** covering **algorithms, problem-solving, and small applications**. Each project is self-contained and organized into folders for easy access.  
-
-📌 **Perfect for:**  
-✔️ Beginners learning C  
-✔️ Interview preparation  
-✔️ Small coding exercises  
+This program finds the **second largest number** in a given array of integers.
 
 ---
 
-## 📂 Project List  
+## 🧠 Problem Statement
 
-| #  | Project Name               | Description |
-|----|----------------------------|-------------|
-| 1️⃣ | **Anagram Checker**        | Checks if two words are anagrams |
-| 2️⃣ | **Prime Number Checker**   | Determines if a number is prime |
-| 3️⃣ | **Fibonacci Generator**    | Generates Fibonacci series up to `n` |
-| 4️⃣ | **Palindrome Checker**     | Verifies if a string is a palindrome |
-| 5️⃣ | **Tic-Tac-Toe**            | A simple CLI Tic-Tac-Toe game |
-| 6️⃣ | **Temperature Converter**  | Converts Celsius to Fahrenheit and vice versa |
-| ... | *More projects coming soon!* 🚀 |
+Given an array of integers, we are tasked with finding the **second largest number** in the array.
+
+### 🧾 Example:
+Array: `[12, 35, 1, 10, 34, 1]`
+
+- **Largest number**: `35`
+- **Second largest number**: `34`
 
 ---
 
-## 🔧 Installation & Usage  
+## ⚙️ Logic & Approach
 
-### **1️⃣ Clone this repository**  
-```sh
-git clone https://github.com/yourusername/C-Simple-Projects.git
-cd C-Simple-Projects
+To find the second largest number:
+1. Traverse the array while keeping track of the **largest** and **second largest** values.
+2. Update the **largest** value if a larger element is found and adjust the **second largest** accordingly.
+3. If no second largest number exists (e.g., all elements are equal), return `-1`.
 
+---
+
+## 💻 Code
+
+```c
+#include <stdio.h>
+#include <limits.h>
+
+int findSecondLargest(int arr[], int size) {
+    int first = INT_MIN, second = INT_MIN;
+
+    for (int i = 0; i < size; i++) {
+        if (arr[i] > first) {
+            second = first;
+            first = arr[i];
+        } else if (arr[i] > second && arr[i] != first) {
+            second = arr[i];
+        }
+    }
+
+    return (second == INT_MIN) ? -1 : second;
+}
+
+int main() {
+    int arr[] = {12, 35, 1, 10, 34, 1};
+    int size = sizeof(arr) / sizeof(arr[0]);
+    
+    int secondLargest = findSecondLargest(arr, size);
+    if (secondLargest == -1)
+        printf("No second largest number found.\n");
+    else
+        printf("Second largest number is: %d\n", secondLargest);
+
+    return 0;
+}
+```
+
+---
+## 🧪 Sample Output
+**Input:**
+
+```
+Array: [12, 35, 1, 10, 34, 1]
+```
+
+**Output:**
+
+```
+Second largest number is: 34
+```
