@@ -19,7 +19,7 @@ This C++ program finds the **missing number** in a sequence of integers ranging 
    \large \text{totalSum} = \frac{n \times (n + 1)}{2}
    $$
   
-   
+ <br></br>  
    It then calculates the sum of the numbers in the array (`arrSum`) and finds the difference between the two sums, which will give the missing number.
 ##
 3. **Output**: The program prints the missing number.
