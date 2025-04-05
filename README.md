@@ -125,6 +125,29 @@ A collection of 'beginner-friendly' **C programming projects** covering **algori
   ```
   csc hello.cs
   ```
+- If it doesn't work you can:
+
+  Create new console:
+  ```
+  dotnet new console -n MyConsoleApp
+  ```
+  Get into the folder of that console:
+  ```
+  cd MyConsoleApp
+  ```
+
+  Build the project:
+  ```
+  dotnet build
+  ```
+
+  Replace the code of the `Program.cs` and run it:
+
+  ```
+  dotnet run
+  ```
+  
+  
 ---
 
 
