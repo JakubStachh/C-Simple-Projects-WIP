@@ -14,6 +14,7 @@ For example:
 
 ### **Steps**:
 1. **Initial Check**: The program first checks if the number is less than or equal to 1. If so, it returns false since numbers less than or equal to 1 are not prime.
+
 2. **Looping through Potential Divisors**: The program loops through numbers starting from 2 up to the square root of the given number (`sqrt(num)`) to check for any divisors. 
    - If a divisor is found, the number is not prime.
    - If no divisors are found, the number is prime.
