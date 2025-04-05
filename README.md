@@ -121,6 +121,10 @@ A collection of 'beginner-friendly' **C programming projects** covering **algori
   ```
   dotnet --version
   ```
+- Then compile & run the C# program:
+  ```
+  csc hello.cs
+  ```
 ---
 
 
