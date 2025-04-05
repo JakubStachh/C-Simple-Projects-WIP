@@ -11,7 +11,7 @@ This C program demonstrates **two methods** to find the `n`th Fibonacci number:
 The **Fibonacci sequence** is a series of numbers where each number is the sum of the two preceding ones:
 
 
-##
+
 $$
 \large \text{0, 1, 1, 2, 3, 5, 8, 13, ...}
 $$
