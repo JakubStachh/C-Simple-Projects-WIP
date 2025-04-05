@@ -16,7 +16,7 @@ This C++ program finds the **missing number** in a sequence of integers ranging 
  <br></br>  
 
    $$
-   \verylarge \text{totalSum} = \frac{n \times (n + 1)}{2}
+   \large \text{totalSum} = \frac{n \times (n + 1)}{2}
    $$
   
  <br></br>  
