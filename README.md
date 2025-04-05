@@ -37,19 +37,19 @@ A collection of 'beginner-friendly' **C programming projects** covering **algori
 
 | #  | Project Name               | Description |
 |----|----------------------------|-------------|
-|‎‎ ‎ 1️⃣|[Anagram_Checker]()||
-|‎‎ ‎ 2️⃣|[]()||
-|‎‎‎‎‎‎‎ ‎ 3️⃣[]()||
-|‎ ‎ ‎4️⃣|[]()||
-|‎‎ ‎ 5️⃣|[]()||
-|‎ ‎ 6️⃣|[]()||
-|‎‎ ‎ 7️⃣|[]()|
-|‎‎ ‎ 8️⃣|[]()||
-|‎‎ ‎ 9️⃣|[]()||
-|1️⃣0️⃣|[]()||
-|1️⃣1️⃣|[]()||
-|1️⃣2️⃣|[]()||
-|1️⃣3️⃣|[]()||
+|‎‎ ‎ 1️⃣|[Check_for_Armstrong_Number](https://github.com/JakubStachh/C-Simple-Projects/tree/main/C%2B%2B%20Projects/projects/Check_for_Armstrong_Number)|This C++ program checks whether a given number is an Armstrong number|
+|‎‎ ‎ 2️⃣|[Check_for_Palindrome](https://github.com/JakubStachh/C-Simple-Projects/tree/main/C%2B%2B%20Projects/projects/Check_for_Palindrome)|This C++ program checks if a given string is a palindrome|
+|‎‎‎‎‎‎‎ ‎ 3️⃣[Check_if_Two_Strings_are_Anagrams(https://github.com/JakubStachh/C-Simple-Projects/tree/main/C%2B%2B%20Projects/projects/Check_if_Two_Strings_are_Anagrams)|This C++ program checks if two strings are anagrams of each other|
+|‎ ‎ ‎4️⃣|[Check_if_a_Number_is_Prime](https://github.com/JakubStachh/C-Simple-Projects/tree/main/C%2B%2B%20Projects/projects/Check_if_a_Number_is_Prime)|This C++ program determines if a given number is prime|
+|‎‎ ‎ 5️⃣|[Count_Vowels_and_Consonants_in_a_String](https://github.com/JakubStachh/C-Simple-Projects/tree/main/C%2B%2B%20Projects/projects/Count_Vowels_and_Consonants_in_a_String)|The program uses `std::tolower()` to ensure that case differences (e.g., `'A'` and `'a'`) are handled the same way|
+|‎ ‎ 6️⃣|[Factorial_of_a_Number](https://github.com/JakubStachh/C-Simple-Projects/tree/main/C%2B%2B%20Projects/projects/Factorial_of_a_Number)This C++ program calculates the factorial of a given number using a recursive approach||
+|‎‎ ‎ 7️⃣|[Fibonacci_Series](https://github.com/JakubStachh/C-Simple-Projects/tree/main/C%2B%2B%20Projects/projects/Fibonacci_Series)|This C++ program calculates the Fibonacci series up to a given number `n` using a recursive approach|
+|‎‎ ‎ 8️⃣|[Find the Length_of_a_String_Without_Using_Built-in_Functions](https://github.com/JakubStachh/C-Simple-Projects/tree/main/C%2B%2B%20Projects/projects/Find%20the%20Length_of_a_String_Without_Using_Built-in_Functions)|This C++ program calculates the length of a given string manually by iterating through the string characters until the null-terminator (`'\0'`) is reached|
+|‎‎ ‎ 9️⃣|[Find_GCD_(Greatest Common Divisor)_Using_Euclid's_Algorithm](https://github.com/JakubStachh/C-Simple-Projects/tree/main/C%2B%2B%20Projects/projects/Find_GCD_(Greatest%20Common%20Divisor)_Using_Euclid's_Algorithm)|This C++ program calculates the Greatest Common Divisor (GCD) of two numbers using the Euclidean algorithm|
+|1️⃣0️⃣|[Find_the_Largest_Element_in_an_Array](https://github.com/JakubStachh/C-Simple-Projects/tree/main/C%2B%2B%20Projects/projects/Find_the_Largest_Element_in_an_Array)|This C++ program finds the largest element in a given array of integers|
+|1️⃣1️⃣|[Find_the_Missing_Number_in_an_Array](https://github.com/JakubStachh/C-Simple-Projects/tree/main/C%2B%2B%20Projects/projects/Find_the_Missing_Number_in_an_Array)|This C++ program finds the **missing number** in a sequence of integers ranging from `1` to `n`, where `n` is the total number of integers in the sequence|
+|1️⃣2️⃣|[Find_the_Second_Largest_Element_in_an_Array](https://github.com/JakubStachh/C-Simple-Projects/tree/main/C%2B%2B%20Projects/projects/Find_the_Second_Largest_Element_in_an_Array)|This C++ program finds the second largest element in an array of integers|
+|1️⃣3️⃣|[Implement_a_Simple_Calculator](https://github.com/JakubStachh/C-Simple-Projects/tree/main/C%2B%2B%20Projects/projects/Implement_a_Simple_Calculator)|This is a simple C++ calculator program that takes two numbers and an operator as input and performs basic arithmetic operations (+, -, *, /)|
 |1️⃣4️⃣|[]()||
 |1️⃣5️⃣|[]()||
 |1️⃣6️⃣|[]()||
