@@ -1,32 +1,76 @@
-# C - Simple Projects 🚀  
+# Vowels and Consonants Counter in C++
 
-A collection of 'beginner-friendly' **C programming projects** covering **algorithms, problem-solving, and small applications**. Each project is self-contained and organized into folders for easy access.  
+## 📝 **Overview**
 
-📌 **Perfect for:**  
-✔️ Beginners learning C  
-✔️ Interview preparation  
-✔️ Small coding exercises  
+This C++ program counts the number of vowels and consonants in a given string. It filters out any non-alphabetic characters and treats uppercase and lowercase letters equally by converting them to lowercase.
 
 ---
 
-## 📂 Project List  
+## 💻 **Program Explanation**
 
-| #  | Project Name               | Description |
-|----|----------------------------|-------------|
-| 1️⃣ | **Anagram Checker**        | Checks if two words are anagrams |
-| 2️⃣ | **Prime Number Checker**   | Determines if a number is prime |
-| 3️⃣ | **Fibonacci Generator**    | Generates Fibonacci series up to `n` |
-| 4️⃣ | **Palindrome Checker**     | Verifies if a string is a palindrome |
-| 5️⃣ | **Tic-Tac-Toe**            | A simple CLI Tic-Tac-Toe game |
-| 6️⃣ | **Temperature Converter**  | Converts Celsius to Fahrenheit and vice versa |
-| ... | *More projects coming soon!* 🚀 |
+### **Steps**:
+1. **Input**: The program takes an input string.
+2. **Iterate Through Characters**: It iterates through each character in the string.
+   - It checks if the character is an alphabet letter.
+   - It counts vowels (a, e, i, o, u) and consonants (all other alphabet letters).
+3. **Output**: After processing the string, the program outputs the total number of vowels and consonants.
 
 ---
 
-## 🔧 Installation & Usage  
+## 🧑‍💻 **Code:**
 
-### **1️⃣ Clone this repository**  
-```sh
-git clone https://github.com/yourusername/C-Simple-Projects.git
-cd C-Simple-Projects
+```cpp
+#include <iostream>
+#include <cctype>
 
+void countVowelsAndConsonants(const std::string &str) {
+    int vowels = 0, consonants = 0;
+    
+    for (char c : str) {
+        c = std::tolower(c);
+        if (isalpha(c)) {
+            if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u') {
+                vowels++;
+            } else {
+                consonants++;
+            }
+        }
+    }
+
+    std::cout << "Vowels: " << vowels << ", Consonants: " << consonants << std::endl;
+}
+
+int main() {
+    std::string str = "Hello World!";
+    countVowelsAndConsonants(str);
+    return 0;
+}
+```
+
+---
+## 🚀 How It Works:
+### 1. Convert to Lowercase:
+- The program uses `std::tolower()` to ensure that case differences (e.g., `'A'` and `'a'`) are handled the same way.
+
+### 2. Character Processing:
+- The program checks if each character in the string is an alphabet letter using the `isalpha()` function.
+
+- It compares each letter to the vowels `a, e, i, o, u` to increment the `vowels` counter.
+
+- If the character is not a vowel and is an alphabet letter, it is considered a consonant, and the `consonants` counter is incremented.
+
+### 3. Output:
+- The program prints out the total number of vowels and consonants in the string.
+
+
+---
+## 🖼️ Sample Output:
+### Example 1 - Input: `"Hello World!"`:
+```yaml
+Vowels: 3, Consonants: 7
+```
+
+### Example 2 - Input: `"Programming is Fun!"`:
+```yaml
+Vowels: 6, Consonants: 10
+```
