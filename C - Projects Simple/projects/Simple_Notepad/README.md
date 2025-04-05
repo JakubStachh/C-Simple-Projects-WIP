@@ -93,7 +93,7 @@ Enter text to save (max 500 characters):
 Hello, this is a note!
 ```
 
-- **Output:
+- **Output:**
 ```
 Text saved successfully.
 ```
