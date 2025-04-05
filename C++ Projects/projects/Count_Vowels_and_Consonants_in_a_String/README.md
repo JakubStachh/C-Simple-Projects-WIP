@@ -9,10 +9,13 @@ This C++ program counts the number of vowels and consonants in a given string. I
 ## 💻 **Program Explanation**
 
 ### **Steps**:
+
 1. **Input**: The program takes an input string.
+
 2. **Iterate Through Characters**: It iterates through each character in the string.
    - It checks if the character is an alphabet letter.
    - It counts vowels (a, e, i, o, u) and consonants (all other alphabet letters).
+
 3. **Output**: After processing the string, the program outputs the total number of vowels and consonants.
 
 ---
