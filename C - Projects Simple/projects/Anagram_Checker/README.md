@@ -1,32 +1,76 @@
-# C - Simple Projects 🚀  
+# 📝 C Program: Check if Two Strings are Anagrams
 
-A collection of 'beginner-friendly' **C programming projects** covering **algorithms, problem-solving, and small applications**. Each project is self-contained and organized into folders for easy access.  
+This C program checks if two input strings are anagrams of each other. An anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.
 
-📌 **Perfect for:**  
-✔️ Beginners learning C  
-✔️ Interview preparation  
-✔️ Small coding exercises  
+## 🔑 Key Concepts:
+1. **Case Insensitivity**: The program ensures case insensitivity by converting all characters to lowercase using the `tolower()` function.
+2. **Character Counting**: It counts the frequency of each character in both strings using two arrays, `count1` and `count2`.
+3. **Validation**: It compares the character counts for both strings. If they match, the strings are anagrams.
 
----
+## 🧑‍💻 Program Explanation:
 
-## 📂 Project List  
+### 1. `areAnagrams()` Function:
+- This function compares two input strings to check if they are anagrams.
+- **Input**: Two strings, `str1` and `str2`.
+- **Steps**:
+  1. It first checks if the lengths of the two strings are the same. If they are not, the strings cannot be anagrams.
+  2. It then counts the frequency of each character in both strings (converting each character to lowercase to handle case insensitivity).
+  3. Finally, it compares the frequency arrays for both strings. If they are identical, the strings are anagrams.
 
-| #  | Project Name               | Description |
-|----|----------------------------|-------------|
-| 1️⃣ | **Anagram Checker**        | Checks if two words are anagrams |
-| 2️⃣ | **Prime Number Checker**   | Determines if a number is prime |
-| 3️⃣ | **Fibonacci Generator**    | Generates Fibonacci series up to `n` |
-| 4️⃣ | **Palindrome Checker**     | Verifies if a string is a palindrome |
-| 5️⃣ | **Tic-Tac-Toe**            | A simple CLI Tic-Tac-Toe game |
-| 6️⃣ | **Temperature Converter**  | Converts Celsius to Fahrenheit and vice versa |
-| ... | *More projects coming soon!* 🚀 |
+### 2. Main Function:
+- The main function prompts the user for two strings, calls the `areAnagrams()` function, and prints whether the strings are anagrams or not.
 
----
+## 💻 Code:
 
-## 🔧 Installation & Usage  
+```c
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
 
-### **1️⃣ Clone this repository**  
-```sh
-git clone https://github.com/yourusername/C-Simple-Projects.git
-cd C-Simple-Projects
+#define SIZE 256
 
+int areAnagrams(char *str1, char *str2) {
+    int count1[SIZE] = {0}, count2[SIZE] = {0};
+
+    if (strlen(str1) != strlen(str2)) return 0;
+
+    for (int i = 0; str1[i] && str2[i]; i++) {
+        count1[tolower(str1[i])]++;
+        count2[tolower(str2[i])]++;
+    }
+
+    for (int i = 0; i < SIZE; i++) {
+        if (count1[i] != count2[i]) return 0;
+    }
+    return 1;
+}
+
+int main() {
+    char str1[100], str2[100];
+    
+    printf("Enter first string: ");
+    scanf("%s", str1);
+    
+    printf("Enter second string: ");
+    scanf("%s", str2);
+
+    if (areAnagrams(str1, str2)) 
+        printf("The strings are anagrams. ✅\n");
+    else 
+        printf("The strings are not anagrams. ❌\n");
+
+    return 0;
+}
+```
+##
+🌟 Example:
+**Input**:
+
+```
+Enter first string: listen
+Enter second string: silent
+```
+**Output**:
+```
+The strings are anagrams. ✅
+```
