@@ -1,32 +1,80 @@
-# C - Simple Projects 🚀  
+# 🔢 Fibonacci Number Generator in C
 
-A collection of 'beginner-friendly' **C programming projects** covering **algorithms, problem-solving, and small applications**. Each project is self-contained and organized into folders for easy access.  
-
-📌 **Perfect for:**  
-✔️ Beginners learning C  
-✔️ Interview preparation  
-✔️ Small coding exercises  
+This C program demonstrates **two methods** to find the `n`th Fibonacci number:
+- ✅ Recursive (simple but inefficient)
+- ⚡ Iterative (efficient and recommended for large `n`)
 
 ---
 
-## 📂 Project List  
+## 🌱 What is the Fibonacci Sequence?
 
-| #  | Project Name               | Description |
-|----|----------------------------|-------------|
-| 1️⃣ | **Anagram Checker**        | Checks if two words are anagrams |
-| 2️⃣ | **Prime Number Checker**   | Determines if a number is prime |
-| 3️⃣ | **Fibonacci Generator**    | Generates Fibonacci series up to `n` |
-| 4️⃣ | **Palindrome Checker**     | Verifies if a string is a palindrome |
-| 5️⃣ | **Tic-Tac-Toe**            | A simple CLI Tic-Tac-Toe game |
-| 6️⃣ | **Temperature Converter**  | Converts Celsius to Fahrenheit and vice versa |
-| ... | *More projects coming soon!* 🚀 |
+The **Fibonacci sequence** is a series of numbers where each number is the sum of the two preceding ones:
+
+
+##
+$$
+\large \text{0, 1, 1, 2, 3, 5, 8, 13, ...}
+$$
+##
+
+
+- `F(0) = 0`
+- `F(1) = 1`
+- `F(n) = F(n - 1) + F(n - 2)` for `n ≥ 2`
 
 ---
 
-## 🔧 Installation & Usage  
+## 🧠 Program Logic
 
-### **1️⃣ Clone this repository**  
-```sh
-git clone https://github.com/yourusername/C-Simple-Projects.git
-cd C-Simple-Projects
+### 1. `fibonacciRecursive(int n)`
+- Base Case: Returns `n` if `n <= 1`
+- Recursive Step: Calls itself for `n - 1` and `n - 2`
+- ❌ **Inefficient** for large `n` due to repeated calculations
 
+### 2. `fibonacciIterative(int n)`
+- Uses a loop to avoid recursion
+- Updates two previous values to generate the next one
+- ✅ **Efficient** and fast for large `n`
+
+---
+
+## 💻 Code:
+
+```c
+#include <stdio.h>
+
+// Recursive approach (inefficient for large n)
+int fibonacciRecursive(int n) {
+    if (n <= 1) return n;
+    return fibonacciRecursive(n - 1) + fibonacciRecursive(n - 2);
+}
+
+// Iterative approach (efficient)
+int fibonacciIterative(int n) {
+    if (n <= 1) return n;
+    int a = 0, b = 1, c;
+    for (int i = 2; i <= n; i++) {
+        c = a + b;
+        a = b;
+        b = c;
+    }
+    return c;
+}
+
+int main() {
+    int n;
+    printf("Enter position: ");
+    scanf("%d", &n);
+    
+    printf("Fibonacci (Recursive): %d\n", fibonacciRecursive(n));
+    printf("Fibonacci (Iterative): %d\n", fibonacciIterative(n));
+
+    return 0;
+}
+🧪 Sample Output
+mathematica
+Copy
+Edit
+Enter position: 7
+Fibonacci (Recursive): 13
+Fibonacci (Iterative): 13
