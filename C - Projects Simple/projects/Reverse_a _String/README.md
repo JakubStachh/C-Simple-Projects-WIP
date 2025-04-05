@@ -8,8 +8,10 @@ This C program takes a string and reverses it in-place using the **two-pointer**
 
 1. The function **`reverseString()`** uses two pointers:
    - One starting from the beginning (`left`) and one from the end (`right`).
+     
 2. It swaps the characters at the `left` and `right` indices until the pointers meet in the middle.
-3. The string is modified in place, and no additional memory is used for the reversed string.
+   
+4. The string is modified in place, and no additional memory is used for the reversed string.
 
 ---
 
