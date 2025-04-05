@@ -39,7 +39,7 @@ A collection of 'beginner-friendly' **C programming projects** covering **algori
 |----|----------------------------|-------------|
 |‎‎ ‎ 1️⃣|[Check_for_Armstrong_Number](https://github.com/JakubStachh/C-Simple-Projects/tree/main/C%2B%2B%20Projects/projects/Check_for_Armstrong_Number)|This C++ program checks whether a given number is an Armstrong number|
 |‎‎ ‎ 2️⃣|[Check_for_Palindrome](https://github.com/JakubStachh/C-Simple-Projects/tree/main/C%2B%2B%20Projects/projects/Check_for_Palindrome)|This C++ program checks if a given string is a palindrome|
-|‎‎‎‎‎‎‎ ‎ 3️⃣[Check_if_Two_Strings_are_Anagrams(https://github.com/JakubStachh/C-Simple-Projects/tree/main/C%2B%2B%20Projects/projects/Check_if_Two_Strings_are_Anagrams)|This C++ program checks if two strings are anagrams of each other|
+|‎‎‎‎‎‎‎ ‎ 3️⃣|[Check_if_Two_Strings_are_Anagrams(https://github.com/JakubStachh/C-Simple-Projects/tree/main/C%2B%2B%20Projects/projects/Check_if_Two_Strings_are_Anagrams)|This C++ program checks if two strings are anagrams of each other|
 |‎ ‎ ‎4️⃣|[Check_if_a_Number_is_Prime](https://github.com/JakubStachh/C-Simple-Projects/tree/main/C%2B%2B%20Projects/projects/Check_if_a_Number_is_Prime)|This C++ program determines if a given number is prime|
 |‎‎ ‎ 5️⃣|[Count_Vowels_and_Consonants_in_a_String](https://github.com/JakubStachh/C-Simple-Projects/tree/main/C%2B%2B%20Projects/projects/Count_Vowels_and_Consonants_in_a_String)|The program uses `std::tolower()` to ensure that case differences (e.g., `'A'` and `'a'`) are handled the same way|
 |‎ ‎ 6️⃣|[Factorial_of_a_Number](https://github.com/JakubStachh/C-Simple-Projects/tree/main/C%2B%2B%20Projects/projects/Factorial_of_a_Number)This C++ program calculates the factorial of a given number using a recursive approach||
