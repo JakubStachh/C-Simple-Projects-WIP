@@ -10,7 +10,7 @@ A collection of 'beginner-friendly' **C programming projects** covering **algori
 |----|----------------------------|-------------|
 |‎‎ ‎ 1️⃣|[Anagram_Checker](https://github.com/JakubStachh/C-Simple-Projects/tree/main/C%20-%20Projects%20Simple/projects/Anagram_Checker)|This C program checks if two input strings are anagrams of each other|
 |‎‎ ‎ 2️⃣|[Armstrong_Number_Checker](https://github.com/JakubStachh/C-Simple-Projects/tree/main/C%20-%20Projects%20Simple/projects/Armstrong_Number_Checker)|An Armstrong number is a number that is equal to the sum of its own digits, each raised to the power of the number of digits|
-|‎‎‎‎‎‎‎ ‎ 3️⃣[Calculator](https://github.com/JakubStachh/C-Simple-Projects/tree/main/C%20-%20Projects%20Simple/projects/Calculator)|A basic calculator performs simple arithmetic operations such as addition, subtraction, multiplication, and division|
+|‎‎‎‎‎‎‎ ‎ 3️⃣|[Calculator](https://github.com/JakubStachh/C-Simple-Projects/tree/main/C%20-%20Projects%20Simple/projects/Calculator)|A basic calculator performs simple arithmetic operations such as addition, subtraction, multiplication, and division|
 |‎ ‎ ‎4️⃣|[Character_Counter](https://github.com/JakubStachh/C-Simple-Projects/tree/main/C%20-%20Projects%20Simple/projects/Character_Counter)|This program takes a line of text and a character as input, then counts how many times that character appears in the text|
 |‎‎ ‎ 5️⃣|[Check_for_Palindrome](https://github.com/JakubStachh/C-Simple-Projects/tree/main/C%20-%20Projects%20Simple/projects/Check_for_Palindrome)|Uses two pointers (`left` and `right`) to compare characters from both ends of the string|
 |‎ ‎ 6️⃣|[]()||
