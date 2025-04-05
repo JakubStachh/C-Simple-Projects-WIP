@@ -86,16 +86,16 @@ In the output:
 
 The result matrix is calculated as:
 
-\[
+$$
 \text{result}[0][0] = (1 \times 5) + (2 \times 7) = 19
-\]
-\[
+$$
+$$
 \text{result}[0][1] = (1 \times 6) + (2 \times 8) = 22
-\]
-\[
+$$
+$$
 \text{result}[1][0] = (3 \times 5) + (4 \times 7) = 43
-\]
-\[
+$$
+$$
 \text{result}[1][1] = (3 \times 6) + (4 \times 8) = 50
-\]
+$$
 
