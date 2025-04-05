@@ -1,32 +1,62 @@
-# C - Simple Projects 🚀  
+# String Length Calculation in C++
 
-A collection of 'beginner-friendly' **C programming projects** covering **algorithms, problem-solving, and small applications**. Each project is self-contained and organized into folders for easy access.  
+## 📝 **Overview**
 
-📌 **Perfect for:**  
-✔️ Beginners learning C  
-✔️ Interview preparation  
-✔️ Small coding exercises  
+This C++ program calculates the length of a given string manually by iterating through the string characters until the null-terminator (`'\0'`) is reached. This approach avoids using the built-in `std::string::length()` function.
 
 ---
 
-## 📂 Project List  
+## 💻 **Program Explanation**
 
-| #  | Project Name               | Description |
-|----|----------------------------|-------------|
-| 1️⃣ | **Anagram Checker**        | Checks if two words are anagrams |
-| 2️⃣ | **Prime Number Checker**   | Determines if a number is prime |
-| 3️⃣ | **Fibonacci Generator**    | Generates Fibonacci series up to `n` |
-| 4️⃣ | **Palindrome Checker**     | Verifies if a string is a palindrome |
-| 5️⃣ | **Tic-Tac-Toe**            | A simple CLI Tic-Tac-Toe game |
-| 6️⃣ | **Temperature Converter**  | Converts Celsius to Fahrenheit and vice versa |
-| ... | *More projects coming soon!* 🚀 |
+### **Steps**:
+1. **Input**: The program takes a string (`"Hello, World!"` in this case).
+2. **Length Calculation**: The function `stringLength()` calculates the length of the string by counting characters until the null-terminator (`'\0'`).
+3. **Output**: The program prints the length of the string.
 
 ---
 
-## 🔧 Installation & Usage  
+## 🧑‍💻 **Code**:
 
-### **1️⃣ Clone this repository**  
-```sh
-git clone https://github.com/yourusername/C-Simple-Projects.git
-cd C-Simple-Projects
+```cpp
+#include <iostream>
 
+int stringLength(const std::string &str) {
+    int length = 0;
+    while (str[length] != '\0') {
+        length++;
+    }
+    return length;
+}
+
+int main() {
+    std::string str = "Hello, World!";
+    std::cout << "Length of string: " << stringLength(str) << std::endl;
+    return 0;
+}
+```
+
+---
+## 🚀 How It Works:
+### 1. Custom `stringLength()` Function:
+- This function receives a string as an argument.
+
+- A variable `length` is initialized to `0`.
+
+- The program iterates through the string using a `while` loop, checking if the character is not the null-terminator (`'\0'`).
+
+- For each character, `length` is incremented until the null-terminator is found, indicating the end of the string.
+
+### 2. `Main` Function:
+- In the `main()` function, a string `"Hello, World!"` is provided.
+
+- The `stringLength()` function is called to calculate the string's length.
+
+- The length is printed to the console.
+
+---
+## 🖼️ Sample Output:
+### Example - Output for `"Hello, World!"`:
+```csharp
+Length of string: 13
+```
+This is the length of the string `"Hello, World!"` excluding the null-terminator.
