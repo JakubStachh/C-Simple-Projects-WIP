@@ -1,32 +1,107 @@
-# C - Simple Projects 🚀  
+# Factorial Program in C#
 
-A collection of 'beginner-friendly' **C programming projects** covering **algorithms, problem-solving, and small applications**. Each project is self-contained and organized into folders for easy access.  
+## 🧑‍💻 **Overview**
 
-📌 **Perfect for:**  
-✔️ Beginners learning C  
-✔️ Interview preparation  
-✔️ Small coding exercises  
+This program calculates the **factorial** of a given number using two different approaches: **Recursive** and **Iterative**.
 
----
+The **factorial** of a non-negative integer `n` is the product of all positive integers less than or equal to `n`. It is denoted as `n!` and is calculated as:
+- `n! = n * (n-1) * (n-2) * ... * 1`
+- Special Case: `0! = 1`
 
-## 📂 Project List  
-
-| #  | Project Name               | Description |
-|----|----------------------------|-------------|
-| 1️⃣ | **Anagram Checker**        | Checks if two words are anagrams |
-| 2️⃣ | **Prime Number Checker**   | Determines if a number is prime |
-| 3️⃣ | **Fibonacci Generator**    | Generates Fibonacci series up to `n` |
-| 4️⃣ | **Palindrome Checker**     | Verifies if a string is a palindrome |
-| 5️⃣ | **Tic-Tac-Toe**            | A simple CLI Tic-Tac-Toe game |
-| 6️⃣ | **Temperature Converter**  | Converts Celsius to Fahrenheit and vice versa |
-| ... | *More projects coming soon!* 🚀 |
+For example:
+- `5! = 5 * 4 * 3 * 2 * 1 = 120`
+- `3! = 3 * 2 * 1 = 6`
 
 ---
 
-## 🔧 Installation & Usage  
+## 💻 **Program Explanation**
 
-### **1️⃣ Clone this repository**  
-```sh
-git clone https://github.com/yourusername/C-Simple-Projects.git
-cd C-Simple-Projects
+1. **Recursive Approach**:
+   - This function calculates the factorial by calling itself repeatedly, multiplying `n` by the factorial of `n-1` until `n` reaches 0 or 1.
+
+2. **Iterative Approach**:
+   - This method uses a loop to compute the factorial, making it more efficient and easier to follow for larger numbers.
+
+3. **Main Method**:
+   - The program prompts the user to enter a number.
+   - It then computes and displays the factorial of the number using both the recursive and iterative methods.
+
+---
+
+## 🧑‍💻 **Code:**
+
+```csharp
+using System;
+
+namespace FactorialProgram
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter a number:");
+            int num = int.Parse(Console.ReadLine());
+
+            // Recursive approach
+            Console.WriteLine($"Factorial (Recursive) of {num}: {FactorialRecursive(num)}");
+
+            // Iterative approach
+            Console.WriteLine($"Factorial (Iterative) of {num}: {FactorialIterative(num)}");
+        }
+
+        static int FactorialRecursive(int n)
+        {
+            if (n == 0 || n == 1)
+                return 1;
+            return n * FactorialRecursive(n - 1);
+        }
+
+        static int FactorialIterative(int n)
+        {
+            int result = 1;
+            for (int i = 1; i <= n; i++)
+            {
+                result *= i;
+            }
+            return result;
+        }
+    }
+}
+```
+
+---
+## 🚀 Example Run:
+- **Input:**
+```
+Enter a number:
+5
+```
+
+- **Output:**
+```
+Factorial (Recursive) of 5: 120
+Factorial (Iterative) of 5: 120
+```
+
+- **Input:**
+```
+Enter a number:
+3
+```
+
+- **Output:**
+```
+Factorial (Recursive) of 3: 6
+Factorial (Iterative) of 3: 6
+```
+
+---
+## 🔍 Recursive vs Iterative:
+### Recursive:
+
+- Elegant and intuitive, but can be less efficient for large values of n due to the overhead of function calls.
+
+### Iterative:
+
+- More efficient, especially for larger values of n, as it avoids the function call stack overhead.
 
