@@ -19,9 +19,9 @@ Missing number = `3`
 
 We know the **sum of the first n natural numbers** is:
 
-\[
+$$
 \text{Sum} = \frac{n(n+1)}{2}
-\]
+$$
 
 Steps:
 1. Calculate the expected sum of numbers from `1` to `n`.
@@ -50,8 +50,10 @@ int main() {
     printf("Missing number: %d\n", findMissingNumber(arr, n));
     return 0;
 }
-🧪 Sample Output
-yaml
-Copy
-Edit
+```
+
+---
+## 🧪 Sample Output
+```
 Missing number: 3
+```
