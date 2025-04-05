@@ -5,13 +5,13 @@ An **Armstrong number** (also known as a narcissistic number or pluperfect numbe
 - 153 is an Armstrong number because:
 
   $$ 
-  1^3 + 5^3 + 3^3 = 153 
+  \large 1^3 + 5^3 + 3^3 = 153 
   $$
   
 - 370 is an Armstrong number because:
 
   $$ 
-  3^3 + 7^3 + 0^3 = 370 
+  \large 3^3 + 7^3 + 0^3 = 370 
   $$
 
 ## 📚 **Program Explanation**
