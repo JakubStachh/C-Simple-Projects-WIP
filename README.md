@@ -93,7 +93,7 @@ A collection of 'beginner-friendly' **C programming projects** covering **algori
 
 ### 𓀃 The Actual Installation🤌🤌
 
-#### You can use [Programiz Complier](https://www.programiz.com/swift/online-compiler/) or similar online compliers to run the code
+#### You can use [Programiz Complier](https://www.programiz.com/c-programming/online-compiler/) or similar online compliers to run the code
 
 #### But if you're using e.g. Windows Powershell you should:
 
@@ -119,7 +119,7 @@ A collection of 'beginner-friendly' **C programming projects** covering **algori
 
 ### 𓀃 The Actual Installation🤌🤌
 
-#### You can use [Programiz Complier](https://www.programiz.com/c-programming/online-compiler/) or similar online compliers to run the code
+#### You can use [Programiz Complier](https://www.programiz.com/cpp-programming/online-compiler/) or similar online compliers to run the code
 
 #### But if you're using e.g. Windows Powershell you should:
 
