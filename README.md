@@ -50,14 +50,12 @@ A collection of 'beginner-friendly' **C programming projects** covering **algori
 |1️⃣1️⃣|[Find_the_Missing_Number_in_an_Array](https://github.com/JakubStachh/C-Simple-Projects/tree/main/C%2B%2B%20Projects/projects/Find_the_Missing_Number_in_an_Array)|This C++ program finds the **missing number** in a sequence of integers ranging from `1` to `n`, where `n` is the total number of integers in the sequence|
 |1️⃣2️⃣|[Find_the_Second_Largest_Element_in_an_Array](https://github.com/JakubStachh/C-Simple-Projects/tree/main/C%2B%2B%20Projects/projects/Find_the_Second_Largest_Element_in_an_Array)|This C++ program finds the second largest element in an array of integers|
 |1️⃣3️⃣|[Implement_a_Simple_Calculator](https://github.com/JakubStachh/C-Simple-Projects/tree/main/C%2B%2B%20Projects/projects/Implement_a_Simple_Calculator)|This is a simple C++ calculator program that takes two numbers and an operator as input and performs basic arithmetic operations (+, -, *, /)|
-|1️⃣4️⃣|[]()||
-|1️⃣5️⃣|[]()||
-|1️⃣6️⃣|[]()||
-|1️⃣7️⃣|[]()||
-|1️⃣8️⃣|[]()||
-|1️⃣9️⃣|[]()||
-|2️⃣0️⃣|[]()||
-|2️⃣1️⃣|[]()||
+|1️⃣4️⃣|[Matrix_Multiplication](https://github.com/JakubStachh/C-Simple-Projects/tree/main/C%2B%2B%20Projects/projects/Matrix_Multiplication)|This C++ program performs matrix multiplication on two 2x2 matrices and displays the result. It multiplies two matrices, `A` and `B`, and stores the result in a third matrix `result`|
+|1️⃣5️⃣|[Merge_Two_Sorted_Arrays](https://github.com/JakubStachh/C-Simple-Projects/tree/main/C%2B%2B%20Projects/projects/Merge_Two_Sorted_Arrays)|This C++ program merges two sorted arrays into a single sorted array|
+|1️⃣6️⃣|[Reverse_a_Number](https://github.com/JakubStachh/C-Simple-Projects/tree/main/C%2B%2B%20Projects/projects/Reverse_a_Number)|This C++ program reverses a given integer|
+|1️⃣7️⃣|[Reverse_a_String](https://github.com/JakubStachh/C-Simple-Projects/edit/main/C%2B%2B%20Projects/projects/Reverse_a_String/README.md)|This C++ program reverses a given string using the `std::reverse` function from the `<algorithm>` library|
+|1️⃣8️⃣|[Sort_an_Array_Using_Bubble_Sort](https://github.com/JakubStachh/C-Simple-Projects/tree/main/C%2B%2B%20Projects/projects/Sort_an_Array_Using_Bubble_Sort)|This C++ program implements the Bubble Sort algorithm, which is used to sort an array in ascending order|
+|1️⃣9️⃣|[Sum_of_Digits_of_a_Number](https://github.com/JakubStachh/C-Simple-Projects/tree/main/C%2B%2B%20Projects/projects/Sum_of_Digits_of_a_Numbe)|This C++ program calculates the sum of the digits of a given number.|
 
 ---
 
