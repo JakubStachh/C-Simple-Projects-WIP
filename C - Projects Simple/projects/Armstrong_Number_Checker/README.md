@@ -10,6 +10,7 @@ An **Armstrong number** (also known as a narcissistic number or pluperfect numbe
   ##
 - 370 is an Armstrong number because:
 
+  $$
   $$ 
   \large 3^3 + 7^3 + 0^3 = 370 
   $$
