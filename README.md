@@ -65,13 +65,13 @@ A collection of 'beginner-friendly' **C programming projects** covering **algori
 
 | #  | Project Name               | Description |
 |----|----------------------------|-------------|
-|‎‎ ‎ 1️⃣|[Anagram_Checker]()||
-|‎‎ ‎ 2️⃣|[]()||
-|‎‎‎‎‎‎‎ ‎ 3️⃣[]()||
-|‎ ‎ ‎4️⃣|[]()||
-|‎‎ ‎ 5️⃣|[]()||
-|‎ ‎ 6️⃣|[]()||
-|‎‎ ‎ 7️⃣|[]()|
+|‎‎ ‎ 1️⃣|[Anagram_Checker](https://github.com/JakubStachh/C-Simple-Projects/tree/main/C%23%20projects/projects/Anagram_Checker)|Two strings are considered anagrams if they contain the same characters in any order, and with the same frequency|
+|‎‎ ‎ 2️⃣|[Bank_Account_System](https://github.com/JakubStachh/C-Simple-Projects/tree/main/C%23%20projects/projects/Bank_Account_System)|This program simulates a simple bank account system|
+|‎‎‎‎‎‎‎ ‎ 3️⃣[Email_Validation](https://github.com/JakubStachh/C-Simple-Projects/tree/main/C%23%20projects/projects/Email_Validation)|This program validates an email address entered by the user|
+|‎ ‎ ‎4️⃣|[Fibonacci_Series](https://github.com/JakubStachh/C-Simple-Projects/tree/main/C%23%20projects/projects/Fibonacci_Series)|This program calculates the Fibonacci number at a given position using two different approaches: Recursive and Iterative.|
+|‎‎ ‎ 5️⃣|[Find_Factorial](https://github.com/JakubStachh/C-Simple-Projects/tree/main/C%23%20projects/projects/Find_Factorial)|This program calculates the factorial of a given number using two different approaches: Recursive and Iterative.|
+|‎ ‎ 6️⃣|[Find_Missing_Number_in_Array](https://github.com/JakubStachh/C-Simple-Projects/tree/main/C%23%20projects/projects/Find_Missing_Number_in_Array)|This program identifies the **missing number** in an array that contains all numbers from 1 to `n`, except for one missing number|
+|‎‎ ‎ 7️⃣|[Library_Management_System](https://github.com/JakubStachh/C-Simple-Projects/tree/main/C%23%20projects/projects/Library_Management_System)||
 |‎‎ ‎ 8️⃣|[]()||
 |‎‎ ‎ 9️⃣|[]()||
 |1️⃣0️⃣|[]()||
