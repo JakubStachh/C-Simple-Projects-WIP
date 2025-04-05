@@ -14,7 +14,9 @@ For example:
 
 ### **Steps**:
 1. **Two-pointer technique**: The program uses two pointers, `left` and `right`, to compare characters from the beginning and end of the string, progressively moving towards the center.
+
 2. **Character Comparison**: If any characters don't match, it immediately returns `false` (not a palindrome).
+
 3. **Return Result**: If all comparisons are successful, it returns `true`, indicating the string is a palindrome.
 
 ---
@@ -57,7 +59,7 @@ int main() {
 
 ---
 ## 🖼️ Sample Output:
-### Example 1 - Check for "madam":
+### Example 1 - Check for `"madam"`:
 ```yaml
 Palindrome
 ```
