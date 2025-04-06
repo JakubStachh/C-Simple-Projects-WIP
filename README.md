@@ -146,7 +146,6 @@ A collection of 'beginner-friendly' **C programming projects** covering **algori
 ---
 
 
-
 # THANK YOU!
 ```python
 1. And Voilà! You've done it! You've actually checked my code! 
